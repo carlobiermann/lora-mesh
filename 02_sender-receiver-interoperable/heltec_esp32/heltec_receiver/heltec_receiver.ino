@@ -20,6 +20,7 @@ void setup() {
 
 void loop() {
   // try to parse packet
+  LoRa.setSpreadingFactor(8);
   int packetSize = LoRa.parsePacket();
   if (packetSize) {
     // received a packet

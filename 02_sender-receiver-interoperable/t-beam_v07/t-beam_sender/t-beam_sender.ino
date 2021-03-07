@@ -21,10 +21,6 @@ void setup() {
   pinMode(16,OUTPUT);
   pinMode(2,OUTPUT);
   
-  digitalWrite(16, LOW);    // set GPIO16 low to reset OLED
-  delay(50); 
-  digitalWrite(16, HIGH); // while OLED is running, must set GPIO16 in high
-  
   Serial.begin(115200);
   while (!Serial);
   Serial.println();
@@ -48,6 +44,7 @@ void loop() {
 
   // send packet
   LoRa.beginPacket();
+  LoRa.setSpreadingFactor(8);
   LoRa.print("hello ");
   LoRa.print(counter);
   LoRa.endPacket();

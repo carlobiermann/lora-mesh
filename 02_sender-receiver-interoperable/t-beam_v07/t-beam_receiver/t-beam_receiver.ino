@@ -28,10 +28,7 @@ void cbk(int packetSize) {
 }
 
 void setup() {
-  pinMode(16,OUTPUT);
-  digitalWrite(16, LOW);    // set GPIO16 low to reset OLED
-  delay(50); 
-  digitalWrite(16, HIGH); // while OLED is running, must set GPIO16 in high、
+
   
   Serial.begin(115200);
   while (!Serial);
@@ -51,6 +48,7 @@ void setup() {
 }
 
 void loop() {
+  LoRa.setSpreadingFactor(8);
   int packetSize = LoRa.parsePacket();
   if (packetSize) { cbk(packetSize);  }
   delay(10);
