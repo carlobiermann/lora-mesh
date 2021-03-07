@@ -18,7 +18,6 @@ String packet ;
 
  
 void setup() {
-  pinMode(16,OUTPUT);
   pinMode(2,OUTPUT);
   
   Serial.begin(115200);
@@ -32,26 +31,25 @@ void setup() {
     Serial.println("Starting LoRa failed!");
     while (1);
   }
-  //LoRa.onReceive(cbk);
-//  LoRa.receive();
+
   Serial.println("init ok");
    
   delay(1500);
 }
 
 void loop() {
-  Serial.println(String(counter));
-
+  Serial.print("Sending packet: ");
+  Serial.println(counter);
   // send packet
   LoRa.beginPacket();
   LoRa.setSpreadingFactor(8);
   LoRa.print("hello ");
   LoRa.print(counter);
   LoRa.endPacket();
-
+  
   counter++;
   digitalWrite(2, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);                       // wait for a second
   digitalWrite(2, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
+  delay(1000);                        // wait for a second
 }

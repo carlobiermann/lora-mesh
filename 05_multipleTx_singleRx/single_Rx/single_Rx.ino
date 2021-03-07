@@ -15,9 +15,11 @@ String packSize = "--";
 String packet ;
 
 
+/*
 void loraData(){
   Serial.println(rssi);
 }
+
 
 void cbk(int packetSize) {
   packet ="";
@@ -26,6 +28,7 @@ void cbk(int packetSize) {
   rssi = "RSSI " + String(LoRa.packetRssi(), DEC) ;
   loraData();
 }
+*/
 
 void setup() {
 
@@ -40,7 +43,7 @@ void setup() {
     Serial.println("Starting LoRa failed!");
     while (1);
   }
-  //LoRa.onReceive(cbk);
+  77LoRa.onReceive(cbk);
   LoRa.receive();
   Serial.println("init ok");
      
@@ -50,6 +53,14 @@ void setup() {
 void loop() {
   LoRa.setSpreadingFactor(8);
   int packetSize = LoRa.parsePacket();
-  if (packetSize) { cbk(packetSize);  }
-  delay(10);
+  if (packetSize) {
+    // received a packet
+    Serial.print("Received packet '");
+    // read packet
+    while (LoRa.available()) {
+      Serial.print((char)LoRa.read());
+    }
+    // print RSSI of packet
+    Serial.print("' with RSSI ");
+    Serial.println(LoRa.packetRssi());
 }
