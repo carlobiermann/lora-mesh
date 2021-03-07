@@ -43,7 +43,7 @@ void loop() {
   // send packet
   LoRa.beginPacket();
   LoRa.setSpreadingFactor(8);
-  LoRa.print("hello ");
+  LoRa.print("hello from 1 "); // change to "hello from 2/3" for other T-Beams
   LoRa.print(counter);
   LoRa.endPacket();
   

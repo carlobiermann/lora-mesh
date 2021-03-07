@@ -43,7 +43,7 @@ void setup() {
     Serial.println("Starting LoRa failed!");
     while (1);
   }
-  77LoRa.onReceive(cbk);
+  //LoRa.onReceive(cbk);
   LoRa.receive();
   Serial.println("init ok");
      
@@ -63,4 +63,5 @@ void loop() {
     // print RSSI of packet
     Serial.print("' with RSSI ");
     Serial.println(LoRa.packetRssi());
+    }
 }
