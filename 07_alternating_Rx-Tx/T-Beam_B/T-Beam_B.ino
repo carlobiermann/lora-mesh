@@ -17,35 +17,44 @@ void setup() {
   Serial.begin(115200);
   SPI.begin(SCK,MISO,MOSI,SS);
   LoRa.setPins(SS,RST,DI0);
-  LoRa.setSpreadingFactor(9);
   LoRa.begin(BAND);
+  // LoRa.onReceive(cbk);
+  LoRa.setSpreadingFactor(8);
+  
   Serial.println("Initializiation completed.");
-  delay(1500);
 }
 
 void loop() {
-  
-  LoRa.receive();
   int packetSize = LoRa.parsePacket();
-   
-  if (packetSize){ 
-    cbk(packetSize);  
-  } 
+  if (packetSize) {
+    // received a packet
+    Serial.print("Received packet:'");
+    // read packet
+    while (LoRa.available()) {
+      Serial.print((char)LoRa.read());
+    }
+    Serial.println("' ");
+    // sendConfirmation();
+  }
 }
 
-
+/*
 void cbk(int packetSize) {
   packet ="";
   packSize = String(packetSize,DEC);
   
   for (int i = 0; i < packetSize; i++) { 
-    packet += (char) LoRa.read(); 
+    packet += (char) LoRa.read();
+    Serial.print(packet); 
   }
   sendConfirmation();
 }
 
 void sendConfirmation() {
   LoRa.beginPacket();
+  LoRa.setSpreadingFactor(8);
   LoRa.print("Received Msg ");
   LoRa.endPacket();
+  Serial.println("Sent confirmation. ");
 }
+*/

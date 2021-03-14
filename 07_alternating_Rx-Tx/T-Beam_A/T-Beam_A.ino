@@ -17,17 +17,20 @@ void setup() {
   Serial.begin(115200);
   SPI.begin(SCK,MISO,MOSI,SS);
   LoRa.setPins(SS,RST,DI0);
-  LoRa.setSpreadingFactor(9);
   LoRa.begin(BAND);
+  LoRa.setSpreadingFactor(8);
+  //LoRa.onReceive(cbk);
   Serial.println("Initializiation completed.");
   delay(1500);
 }
 
 void loop() {
   LoRa.beginPacket();
+  LoRa.setSpreadingFactor(8);
   LoRa.print("Hello from A");
   LoRa.endPacket();
-  LoRa.onTxDone(onTxDone);
+
+  // int packetSize = LoRa.parsePacket();
 
   delay(5000);
   Serial.println("Next loop");
@@ -35,16 +38,23 @@ void loop() {
 
 // Functions
 
-void onTxDone(){
+/*
+void receiver(){
   LoRa.receive();
-  int packetSize = LoRa.parsePacket();
-   
-  if (packetSize){ 
-    cbk(packetSize);  
-  } 
-  delay(10);
-}
 
+  int packetSize = LoRa.parsePacket();
+  if (packetSize) {
+    // received a packet
+    Serial.print("Received packet '");
+    // read packet
+    while (LoRa.available()) {
+      Serial.print((char)LoRa.read());
+    }
+  }
+}
+*/
+
+/*
 void cbk(int packetSize) {
   packet ="";
   packSize = String(packetSize,DEC);
@@ -53,3 +63,4 @@ void cbk(int packetSize) {
     packet += (char) LoRa.read(); 
   }
 }
+*/
