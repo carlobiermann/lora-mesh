@@ -1,60 +1,83 @@
+// LoRa T-Beam Duplex Communication from: https://hutscape.com/tutorials/lora-duplex-b-esp32-t-beam
+
 #include <SPI.h>
 #include <LoRa.h>
-#include <Wire.h>  
+
+#define RADIO_CS_PIN 18
+#define RADIO_DI0_PIN 26
+#define RADIO_RST_PIN 14
 
 #define SCK     5    // GPIO5  -- SX1278's SCK
 #define MISO    19   // GPIO19 -- SX1278's MISnO
 #define MOSI    27   // GPIO27 -- SX1278's MOSI
-#define SS      18   // GPIO18 -- SX1278's CS
-#define RST     14   // GPIO14 -- SX1278's RESET
-#define DI0     26   // GPIO26 -- SX1278's IRQ(Interrupt Request)
-#define BAND  868E6
 
-String packSize = "--";
-String packet ;
+byte localAddress = 0xBB;
+byte destinationAddress = 0xAA;
+long lastSendTime = 0;
+int interval = 5000;
+int count = 0;
 
 void setup() {
-  Serial.begin(115200);
-  SPI.begin(SCK,MISO,MOSI,SS);
-  LoRa.setPins(SS,RST,DI0);
-  LoRa.begin(BAND);
-  // LoRa.onReceive(cbk);
-  LoRa.setSpreadingFactor(8);
-  
-  Serial.println("Initializiation completed.");
+  Serial.begin(9600);
+  Serial.println("Start LoRa duplex");
+  SPI.begin(SCK,MISO,MOSI,RADIO_CS_PIN);
+  LoRa.setPins(RADIO_CS_PIN, RADIO_RST_PIN, RADIO_DI0_PIN);
+
+  if (!LoRa.begin(868E6)) {
+    Serial.println("LoRa init failed. Check your connections.");
+    while (true) {}
+  }
 }
 
 void loop() {
-  int packetSize = LoRa.parsePacket();
-  if (packetSize) {
-    // received a packet
-    Serial.print("Received packet:'");
-    // read packet
-    while (LoRa.available()) {
-      Serial.print((char)LoRa.read());
-    }
-    Serial.println("' ");
-    // sendConfirmation();
+  if (millis() - lastSendTime > interval) {
+    String sensorData = String(count++);
+    sendMessage(sensorData);
+
+    Serial.print("Sending data " + sensorData);
+    Serial.print(" from 0x" + String(localAddress, HEX));
+    Serial.println(" to 0x" + String(destinationAddress, HEX));
+
+    lastSendTime = millis();
+    interval = random(2000) + 1000;
   }
+
+  receiveMessage(LoRa.parsePacket());
 }
 
-/*
-void cbk(int packetSize) {
-  packet ="";
-  packSize = String(packetSize,DEC);
-  
-  for (int i = 0; i < packetSize; i++) { 
-    packet += (char) LoRa.read();
-    Serial.print(packet); 
-  }
-  sendConfirmation();
-}
-
-void sendConfirmation() {
+void sendMessage(String outgoing) {
   LoRa.beginPacket();
-  LoRa.setSpreadingFactor(8);
-  LoRa.print("Received Msg ");
+  LoRa.write(destinationAddress);
+  LoRa.write(localAddress);
+  LoRa.write(outgoing.length());
+  LoRa.print(outgoing);
   LoRa.endPacket();
-  Serial.println("Sent confirmation. ");
 }
-*/
+
+void receiveMessage(int packetSize) {
+  if (packetSize == 0) return;
+
+  int recipient = LoRa.read();
+  byte sender = LoRa.read();
+  byte incomingLength = LoRa.read();
+
+  String incoming = "";
+
+  while (LoRa.available()) {
+    incoming += (char)LoRa.read();
+  }
+
+  if (incomingLength != incoming.length()) {
+    Serial.println("Error: Message length does not match length");
+    return;
+  }
+
+  if (recipient != localAddress) {
+    Serial.println("Error: Recipient address does not match local address");
+    return;
+  }
+
+  Serial.print("Received data " + incoming);
+  Serial.print(" from 0x" + String(sender, HEX));
+  Serial.println(" to 0x" + String(recipient, HEX));
+}
