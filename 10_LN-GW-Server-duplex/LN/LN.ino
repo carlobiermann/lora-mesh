@@ -1,21 +1,3 @@
-/*
-  LoRa Simple Gateway/Node Exemple
-  This code uses InvertIQ function to create a simple Gateway/Node logic.
-  Gateway - Sends messages with enableInvertIQ()
-          - Receives messages with disableInvertIQ()
-  Node    - Sends messages with disableInvertIQ()
-          - Receives messages with enableInvertIQ()
-  With this arrangement a Gateway never receive messages from another Gateway
-  and a Node never receive message from another Node.
-  Only Gateway to Node and vice versa.
-  This code receives messages and sends a message every second.
-  InvertIQ function basically invert the LoRa I and Q signals.
-  See the Semtech datasheet, http://www.semtech.com/images/datasheet/sx1276.pdf
-  for more on InvertIQ register 0x33.
-  created 05 August 2018
-  by Luiz H. Cassettari
-*/
-
 #include <SPI.h>              // include libraries
 #include <LoRa.h>
 
@@ -28,6 +10,8 @@ const long frequency = 868E6;  // LoRa Frequency
 #define SCK     5    // GPIO5  -- SX1278's SCK
 #define MISO    19   // GPIO19 -- SX1278's MISnO
 #define MOSI    27   // GPIO27 -- SX1278's MOSI
+
+byte msg[16];
 
 void setup() {
   Serial.begin(9600);                   // initialize serial
@@ -56,13 +40,30 @@ void setup() {
 }
 
 void loop() {
-  if (runEvery(10000)) { // repeat every 1000 millis
+  if (runEvery(10000)) { 
+    
+    // generate random coordinates every 10 seconds
+    signed int iLon = random(-180000000,+180000000);
+    signed int iLat = random(-180000000,+180000000);
+    double lon = iLon;
+    double lat = iLat;
+    lon = lon/1000000;
+    lat = lat/1000000;
 
-    String message = "GBS Dataset";
+    Serial.println("Random Coordinates:");
+    printDouble(lon, 1000000);
+    printDouble(lat, 1000000);
 
-    LoRa_sendMessage(message); // send a message
+    // convert to raw byte array
+    memcpy(&msg[0], (uint8_t *) &lon, sizeof(lon));
+    memcpy(&msg[8], (uint8_t *) &lat, sizeof(lat));
+ 
+    Serial.println("Sending raw byte array: ");
+    for (int i=0; i<=15; i++) {
+      Serial.println(msg[i], HEX);
+    }
 
-    Serial.println("Send Message!");
+    LoRa_sendMessage(&msg[0]);
   }
 }
 
@@ -76,10 +77,10 @@ void LoRa_txMode(){
   LoRa.disableInvertIQ();               // normal mode
 }
 
-void LoRa_sendMessage(String message) {
+void LoRa_sendMessage(byte *message) {
   LoRa_txMode();                        // set tx mode
   LoRa.beginPacket();                   // start packet
-  LoRa.print(message);                  // add payload
+  LoRa.write(message, 16);                  // add payload
   LoRa.endPacket(true);                 // finish packet and send it
 }
 
@@ -109,4 +110,26 @@ boolean runEvery(unsigned long interval)
     return true;
   }
   return false;
+}
+
+void printDouble( double val, unsigned int precision){
+// prints val with number of decimal places determine by precision
+// NOTE: precision is 1 followed by the number of zeros for the desired number of decimial places
+// example: printDouble( 3.1415, 100); // prints 3.14 (two decimal places)
+
+   Serial.print (int(val));  //prints the int part
+   Serial.print("."); // print the decimal point
+   unsigned int frac;
+   if(val >= 0)
+     frac = (val - int(val)) * precision;
+   else
+      frac = (int(val)- val ) * precision;
+   int frac1 = frac;
+   while( frac1 /= 10 )
+       precision /= 10;
+   precision /= 10;
+   while(  precision /= 10)
+       Serial.print("0");
+
+   Serial.println(frac,DEC) ;
 }

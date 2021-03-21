@@ -14,14 +14,13 @@ int main(int argc , char *argv[])
 	int socket_desc , client_sock , c , read_size;
 	struct sockaddr_in server , client;
 	char client_message[2000];
-	char confirmation[14] = "Received msg!\n";
 	
 	//Create socket
 	socket_desc = socket(AF_INET , SOCK_STREAM , 0);
 	if (socket_desc == -1){
-		printf("Could not create socket");
+		printf("Could not create socket\n");
 	}
-	puts("Socket created");
+	puts("Socket created\n");
 	
 	//Prepare the sockaddr_in structure
 	server.sin_family = AF_INET;
@@ -30,44 +29,49 @@ int main(int argc , char *argv[])
 	
 	//Bind
 	if( bind(socket_desc,(struct sockaddr *)&server , sizeof(server)) < 0){
-		perror("bind failed. Error");
+		perror("bind failed. Error\n");
 		return 1;
 	}
-	puts("bind done");
+	puts("bind done\n");
 	
 	//Listen
 	listen(socket_desc , 3);
 
 	while(1){	
 		//Accept and incoming connection
-		puts("Waiting for incoming connections...");
+		puts("Waiting for incoming connections...\n");
 		c = sizeof(struct sockaddr_in);
 	
 		//accept connection from an incoming client
 		client_sock = accept(socket_desc, (struct sockaddr *)&client, (socklen_t*)&c);
 		if (client_sock < 0){
-			perror("Accept failed");
+			perror("Accept failed\n");
 			return 1;
 		}
-		puts("Connection accepted!");
+		puts("Connection accepted!\n");
 		
 		//Receive a message from client
 		while( (read_size = recv(client_sock , client_message , 2000 , 0)) > 0 ){
-			//Send the confirmation message back to client
-			puts("Printing client msg:");
-			puts(client_message);
-			puts("Sending confirmation + client msg back...");
-			write(client_sock , confirmation, strlen(confirmation));
-			// When sending confirmation back, the orignal client
-			// message is still part of the client_sock...
+			puts("Received GPS data:");
+			puts("Raw:");
+			for(int i=0; i<=15; i++){
+				printf("%02x\n", (unsigned char) client_message[i]);
+			}
+			puts("Converted:");
+			double lon = *(double*)(&client_message[0]);
+			double lat = *(double*)(&client_message[8]);
+
+			printf("Longitude: %f \nLatitude: %f \n", lon, lat);
+			// sizeof(f) = 4
+			write(client_sock, client_message, sizeof(client_message));
 		}
 		
 		if(read_size == 0){
-			puts("Client disconnected");
+			puts("Client disconnected\n");
 			fflush(stdout);
 		}
 		else if(read_size == -1){
-			perror("recv failed");
+			perror("recv failed\n");
 		}
 	}	
 	return 0;

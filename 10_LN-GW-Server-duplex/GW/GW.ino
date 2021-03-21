@@ -15,8 +15,8 @@ WiFiMulti WiFiMulti;
 
 const long frequency = 868E6;  // LoRa Frequency
 bool loraRecv = false;
-static char loraMessage[12] = "";
-static char serverMsg[26] = "";
+static byte loraMessage[16] = "";
+static byte serverMsg[16] = "";
 
 
 // INIT
@@ -49,7 +49,7 @@ void setup() {
   delay(10);
 
   // We start by connecting to a WiFi network
-  WiFiMulti.addAP("", "");
+  WiFiMulti.addAP("SSID", "PW");
   Serial.print("Waiting for WiFi... ");
 
   while(WiFiMulti.run() != WL_CONNECTED) {
@@ -72,15 +72,11 @@ void loop() {
   if (loraRecv) {
 
     // Sending to Server
-    sendServer(&serverMsg[0]);
-    Serial.println(serverMsg);
+    sendServer(&loraMessage[0]);
 
-    // Sending Msg confirmation back to Node
-    String message = "Server Confirmation";
-    message += serverMsg;
-    message += millis();
-
-    LoRa_sendMessage(message);     
+    // Sending acknowledgement of message transfer back to LoRa Node (LN)
+    char ack[4] = "ACK";
+    LoRa_sendMessage(&ack[0]);     
     loraRecv = false;
   }
 }
@@ -99,7 +95,7 @@ void LoRa_txMode(){
   LoRa.enableInvertIQ();                // active invert I and Q signals
 }
 
-void LoRa_sendMessage(String message) {
+void LoRa_sendMessage(char *message) {
   LoRa_txMode();                        // set tx mode
   LoRa.beginPacket();                   // start packet
   LoRa.print(message);                  // add payload
@@ -109,18 +105,22 @@ void LoRa_sendMessage(String message) {
 void onReceive(int packetSize) {
   
   while (LoRa.available()) {
-    for(int i = 0; i<25; i++){
-      char c = LoRa.read();
+    for(int i = 0; i<=15; i++){
+      byte c = LoRa.read();
       loraMessage[i] = c;
   }
-  Serial.print("Gateway Receive: ");
-  Serial.println(loraMessage);
+  Serial.println("Received bytes from node:");
+  
+  // Print LoRa Node Message
+    for(int i = 0; i <= 15; i++) {
+      Serial.println(loraMessage[i], HEX);
+    }
   loraRecv = true;
   }
 }
 
 void onTxDone() {
-  Serial.println("TxDone");
+  Serial.println("LoRa ACK sent");
   LoRa_rxMode();
 }
 
@@ -136,14 +136,14 @@ boolean runEvery(unsigned long interval)
   return false;
 }
 
-void sendServer(char * serverMessage) {
+void sendServer(byte * serverMessage) {
 
-    char msgBuffer[26] = "";
+    byte msgBuffer[16] = "";
       
     const uint16_t port = 8888;
     const char * host = "192.168.178.50"; // ip or dns
 
-    Serial.print("Connecting to ");
+    Serial.print("Connecting to Server at: ");
     Serial.println(host);
 
     WiFiClient client;
@@ -155,7 +155,7 @@ void sendServer(char * serverMessage) {
         return;
     }
     // This will send a request to the server
-    client.print(loraMessage);
+    client.write(serverMessage, 16);
 
   int maxloops = 0;
 
@@ -166,15 +166,19 @@ void sendServer(char * serverMessage) {
   }
   if (client.available() > 0) {
     //read back one line from the server
-    for(int i = 0; i<25; i++){
-      char c = client.read();
-      msgBuffer[i] = c;
+    for(int i = 0; i<=15; i++){
+      byte b = client.read();
+      msgBuffer[i] = b;
     }
   }
   else {
     Serial.println("client.available() timed out ");
+  }    
+  // Print Server Message
+  Serial.println("Printing Server Reply: ");
+  for(int i = 0; i <=15; i++) {
+    Serial.println(msgBuffer[i], HEX);
   }
-    Serial.println("Closing connection.");
-    client.stop();
-    strcpy(serverMessage, msgBuffer);
+  Serial.println("Closing Server connection");
+  client.stop();
 }
