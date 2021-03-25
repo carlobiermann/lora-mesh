@@ -18,7 +18,7 @@ One of the T-Beams is a **Gateway Node (GN)** and is connected to the remaining 
 
 The Socket Server will then forward the **payloads**  of each of the seven T-Beams, or **LoRa Nodes (LN)**, to a database via a POST request to an Express Server. The Express Server then handles inserting the JSON data (*the LN payloads*) via a query into a PostgreSQL database.
 
-The payload contains the following information about each LN: 
+**The payload contains the following information about each LN:**
 
 - nodeID
 - number of (LoRa) hops
