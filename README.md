@@ -32,7 +32,7 @@ A system like this can be used to **track** certain **assets** like containers, 
 
 #### Then what about Star-Topology?
 
-Of course, assest tracking solutions already make use of LoRa and LoRaWAN using a star-topology architecture with LoRaWAN gateways and mobile end devices. 
+Of course, asset tracking solutions already make use of LoRa and LoRaWAN using a star-topology architecture with LoRaWAN gateways and mobile end devices.
 
 This project is going to be a research into *how far* a network can be *extended* spacially, when its nodes have the ability to **relay/route** messages to a gateway. This also implies, that the particular node is **out of reach** of a gateway and therefore relies on other network participants within its reach to forward messages.
 
