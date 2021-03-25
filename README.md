@@ -30,7 +30,7 @@ The payload contains the following information about each LN:
 
 A system like this can be used to **track** certain **assets** like containers, hardware equipment and cars. It could even be extended to share sensor data about an asset like monitoring its temperature.
 
-## Then what about Star-Topology?
+#### Then what about Star-Topology?
 
 Of course, assest tracking solutions already make use of LoRa and LoRaWAN using a star-topology architecture with LoRaWAN gateways and mobile end devices. 
 
