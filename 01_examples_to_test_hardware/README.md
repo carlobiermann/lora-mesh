@@ -6,7 +6,7 @@
 |[02_sender-receiver-interoperable](02_sender-receiver-interoperable)|Same programs as above, but using the same *Spreading Factor* to make the devices interoperable | Same as above |
 |[03_RxGPS_t-beam](03_RxGPS_t-beam)|Example sketch provided by LilyGO to test the GPS module |[LilyGO GPS](https://github.com/LilyGO/TTGO-T-Beam/blob/master/GPS/GPS.ino)|
 |[04_RxGPS_t-beam_update](04_RxGPS_t-beam_update)|Updated GPS example by Xinyuan-LilyGO|[Xinyuan-LilyGO GPS](https://github.com/Xinyuan-LilyGO/LilyGO-T-Beam/blob/master/examples/GPS/TinyGPS_Example/TinyGPS_Example.ino)|
-|[05_multipleTx_singleRx](05_multipleTx_singleRx)| | |
+|[05_multipleTx_singleRx](05_multipleTx_singleRx)|Checking the behaviour of a *single* receiver with *multiple* senders| Based on same sources as [01_sender-receiver-trials](01_sender-receiver-trials) |
 |[06_server_client](06_server_client)| | |
 |[07_alternating_Rx-Tx](07_alternating_Rx-Tx)| | |
 |[08_alternating_Rx-Tx_callback](08_alternating_Rx-Tx_callback)| | |
