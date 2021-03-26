@@ -2,7 +2,7 @@
 
 |Folder    |Description |Source |
 |----------|------------|-------|
-|[01_sender-receiver-trials](/01_sender-receiver-trials)| | |
+|[01_sender-receiver-trials](01_sender-receiver-trials)| | |
 |[02_sender-receiver-interoperable](02_sender-receiver-interoperable)| | |
 |[03_RxGPS_t-beam](03_RxGPS_t-beam)|| |
 |[04_RxGPS_t-beam_update](04_RxGPS_t-beam_update)| | |
