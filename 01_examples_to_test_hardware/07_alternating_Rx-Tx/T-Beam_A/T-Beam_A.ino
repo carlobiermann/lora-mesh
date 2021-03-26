@@ -1,4 +1,6 @@
-// LoRa T-Beam Duplex Communication from: https://hutscape.com/tutorials/lora-duplex-a-esp32-t-beam
+/*
+  LoRa T-Beam Duplex Communication from: https://hutscape.com/tutorials/lora-duplex-a-esp32-t-beam
+*/
 
 #include <SPI.h>
 #include <LoRa.h>
