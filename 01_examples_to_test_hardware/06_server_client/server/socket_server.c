@@ -1,6 +1,7 @@
 /*
     C socket server example
     Example from: https://gist.github.com/DnaBoss/68c0f663132792c2176d
+    and https://www.binarytides.com/server-client-example-c-sockets-linux/
 */
 
 #include<stdio.h>
