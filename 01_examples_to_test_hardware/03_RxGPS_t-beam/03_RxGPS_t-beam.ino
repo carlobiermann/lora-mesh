@@ -1,3 +1,7 @@
+/*
+  Code from: https://github.com/LilyGO/TTGO-T-Beam/blob/master/GPS/GPS.ino
+*/
+
 /*****************************************
 * ESP32 GPS VKEL 9600 Bds
 ******************************************/
