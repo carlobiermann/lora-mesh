@@ -1,3 +1,9 @@
+/* 
+ Based on code from: 
+ https://github.com/HelTecAutomation/Heltec_ESP32/blob/master/examples/LoRa/LoRaSender/LoRaSender.ino
+ https://github.com/LilyGO/TTGO-T-Beam/blob/master/OLED_LoRa_Sender/OLED_LoRa_Sender.ino
+*/
+
 #include <SPI.h>
 #include <LoRa.h>
 #include <Wire.h>  
