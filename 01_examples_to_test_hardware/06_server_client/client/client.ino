@@ -1,4 +1,6 @@
-// Code from: https://techtutorialsx.com/2018/05/17/esp32-arduino-sending-data-with-socket-client/
+/* 
+ Code from: https://techtutorialsx.com/2018/05/17/esp32-arduino-sending-data-with-socket-client/
+*/
 
 
 #include <WiFi.h>
