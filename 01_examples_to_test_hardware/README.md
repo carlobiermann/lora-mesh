@@ -1,5 +1,5 @@
 
-## Examples to Test the Hardware
+## Examples to test the hardware
 
 |Folder    |Description |Sources |
 |----------|------------|-------|
