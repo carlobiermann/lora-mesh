@@ -1,10 +1,12 @@
 
 ## Examples to test the hardware
 
-The hardware used for these sketches are: 
+The hardware for these programs: 
 
 - [LilyGO TTGO T-Beam v0.7](http://www.lilygo.cn/prod_view.aspx?TypeId=50033&Id=1237&FId=t3:50033:3)
 - [Heltec ESP32 WiFi LoRa (V2)](https://heltec.org/project/wifi-lora-32/)
+
+Due to antenna issues of the Heltect modules I decided to continue the project with T-Beams only.
 
 |Folder    |Description |Sources |
 |----------|------------|-------|
