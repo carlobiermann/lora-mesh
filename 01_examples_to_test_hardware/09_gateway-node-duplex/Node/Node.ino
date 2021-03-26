@@ -1,4 +1,8 @@
 /*
+  Code from: https://github.com/sandeepmistry/arduino-LoRa/tree/master/examples/LoRaSimpleNode
+*/
+
+/*
   LoRa Simple Gateway/Node Exemple
   This code uses InvertIQ function to create a simple Gateway/Node logic.
   Gateway - Sends messages with enableInvertIQ()
