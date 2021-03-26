@@ -12,7 +12,7 @@
 
 This repository contains all of the sketches and files that I used and tested while trying to come up with a *Mesh Routing Algorithm* using the LoRa PHY Protocol. 
 
-The goal of this project is to implement an *[RPL](https://tools.ietf.org/html/rfc6550)*-like routing algorithm, with the use of **8 LILYGO TTGO T-Beams v0.7**. 
+The goal of this project is to implement an *[RPL](https://tools.ietf.org/html/rfc6550)*-like routing algorithm, with the use of **8 LilyGO TTGO T-Beams v0.7**. 
 
 One of the T-Beams is a **Gateway Node (GN)** and is connected to the remaining seven T-Beams via LoRa and a **Socket Server (SS)** via WiFi.
 
