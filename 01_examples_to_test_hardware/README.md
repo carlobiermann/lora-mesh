@@ -1,6 +1,11 @@
 
 ## Examples to test the hardware
 
+The hardware used for these sketches are: 
+
+- [LilyGO TTGO T-Beam v0.7](http://www.lilygo.cn/prod_view.aspx?TypeId=50033&Id=1237&FId=t3:50033:3)
+- [Heltec ESP32 WiFi LoRa (V2)](https://heltec.org/project/wifi-lora-32/)
+
 |Folder    |Description |Sources |
 |----------|------------|-------|
 |[01_sender-receiver-trials](01_sender-receiver-trials)|Example sketches of simple LoRa *sender* and *receiver* programs by Heltec and LilyGO|[Heltec Sender](https://github.com/HelTecAutomation/Heltec_ESP32/blob/master/examples/LoRa/LoRaSender/LoRaSender.ino), [Heltec Receiver](https://github.com/HelTecAutomation/Heltec_ESP32/blob/master/examples/LoRa/LoRaReceiver/LoRaReceiver.ino), [T-Beam Sender](https://github.com/LilyGO/TTGO-T-Beam/blob/master/OLED_LoRa_Sender/OLED_LoRa_Sender.ino), [T-Beam Receiver](https://github.com/LilyGO/TTGO-T-Beam/blob/master/OLED_LoRa_Receive/OLED_LoRa_Receive.ino)|
