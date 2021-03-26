@@ -1,4 +1,6 @@
-/* 
+/*
+  Code from: https://github.com/HelTecAutomation/Heltec_ESP32/blob/master/examples/LoRa/LoRaReceiver/LoRaReceiver.ino
+  
   Check the new incoming messages, and print via serialin 115200 baud rate.
   
   by Aaron.Lee from HelTec AutoMation, ChengDu, China
