@@ -1,4 +1,5 @@
 /* 
+  Code from: https://github.com/HelTecAutomation/Heltec_ESP32/blob/master/examples/LoRa/LoRaSender/LoRaSender.ino
   Basic test program, send date at the BAND you seted.
   
   by Aaron.Lee from HelTec AutoMation, ChengDu, China
