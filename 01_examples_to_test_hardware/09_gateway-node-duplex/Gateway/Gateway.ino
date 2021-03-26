@@ -1,3 +1,6 @@
+/*
+  Code from: https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaSimpleGateway/LoRaSimpleGateway.ino
+*/
 
 /*
   LoRa Simple Gateway/Node Exemple
