@@ -1,4 +1,8 @@
 /*
+  Code from: https://github.com/Xinyuan-LilyGO/LilyGO-T-Beam/blob/master/examples/GPS/TinyGPS_Example/TinyGPS_Example.ino
+*/
+
+/*
   This sample sketch demonstrates the normal use of a TinyGPS++ (TinyGPSPlus) object.
   Base on TinyGPSPlus //https://github.com/mikalhart/TinyGPSPlus
 */
