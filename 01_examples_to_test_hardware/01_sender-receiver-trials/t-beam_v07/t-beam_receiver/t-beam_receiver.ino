@@ -1,3 +1,7 @@
+/* 
+  Code from: https://github.com/LilyGO/TTGO-T-Beam/blob/master/OLED_LoRa_Receive/OLED_LoRa_Receive.ino
+*/
+
 #include <SPI.h>
 #include <LoRa.h>
 #include <Wire.h>  
