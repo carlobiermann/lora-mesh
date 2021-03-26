@@ -1,4 +1,8 @@
 /*
+  Code from: https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaDuplexCallback/LoRaDuplexCallback.ino
+*/
+
+/*
   LoRa Duplex communication wth callback
   Sends a message every half second, and uses callback
   for new incoming messages. Implements a one-byte addressing scheme,
