@@ -1,6 +1,6 @@
 
 
-|Folder    |Description |Source |
+|Folder    |Description |Sources |
 |----------|------------|-------|
 |[01_sender-receiver-trials](01_sender-receiver-trials)| | |
 |[02_sender-receiver-interoperable](02_sender-receiver-interoperable)| | |
