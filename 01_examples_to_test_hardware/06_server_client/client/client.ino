@@ -9,7 +9,7 @@ const char* ssid = "";
 const char* password =  "";
  
 const uint16_t port = 8888;
-const char * host = "192.168.XX.XX";
+const char * host = "192.168.xx.xx";
  
 void setup()
 {
