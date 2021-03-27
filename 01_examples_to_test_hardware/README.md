@@ -7,6 +7,7 @@ Used boards:
 - [Heltec ESP32 WiFi LoRa (V2)](https://heltec.org/project/wifi-lora-32/)
 
 Due to antenna issues of the Heltect modules I decided to continue the project with T-Beams only.
+
 ✅  indicates that the programs have been tested on the hardware.
 
 
