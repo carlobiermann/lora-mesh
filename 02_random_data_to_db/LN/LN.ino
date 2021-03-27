@@ -43,7 +43,7 @@ void loop() {
   if (runEvery(10000)) { 
 
     // generating random payload
-    int nodeId = random(0, 9);
+    int nodeId = random(1, 9);
     int hops = random(0,4);    
     int iLat = random(52500000, 52530000);
     int iLon = random(13200000, 13600000);
@@ -62,7 +62,7 @@ void loop() {
     memcpy(&msg[0], (uint8_t *) &nodeId, sizeof(nodeId));
     memcpy(&msg[4], (uint8_t *) &hops, sizeof(hops));
     memcpy(&msg[8], (uint8_t *) &lat, sizeof(lat));
-    memcpy(&msg[15], (uint8_t *) &lon, sizeof(lon));
+    memcpy(&msg[16], (uint8_t *) &lon, sizeof(lon));
  
     Serial.println("Sending raw byte array: ");
     for (int i=0; i<=23; i++) {
