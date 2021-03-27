@@ -8,12 +8,14 @@
 #include<sys/socket.h>
 #include<arpa/inet.h>	//inet_addr
 #include<unistd.h>	//write
+#include "curltest.h" // including the post_req function
 
 int main(int argc , char *argv[])
 {
 	int socket_desc , client_sock , c , read_size;
 	struct sockaddr_in server , client;
 	char client_message[2000];
+	char json_bytes[24];
 	
 	//Create socket
 	socket_desc = socket(AF_INET , SOCK_STREAM , 0);
@@ -54,20 +56,23 @@ int main(int argc , char *argv[])
 		while( (read_size = recv(client_sock , client_message , 2000 , 0)) > 0 ){
 			puts("Received GPS data:");
 			puts("Raw:");
-			for(int i=0; i<=15; i++){
+			for(int i=0; i<=23; i++){
 				printf("%02x\n", (unsigned char) client_message[i]);
 			}
 			puts("Converted:");
-			double lon = *(double*)(&client_message[0]);
+			int nodeId = *(int*)(&client_message[0]);
+			int hops = *(int*)(&client_message[4]);
 			double lat = *(double*)(&client_message[8]);
+			double lon = *(double*)(&client_message[16]);
 
-			printf("Longitude: %f \nLatitude: %f \n", lon, lat);
-			// sizeof(f) = 4
+			printf("Node ID: %u\nHops: %u \nLatitude: %f \nLongitude: %f \n",nodeId, hops, lat, lon);
+			memcpy(&json_bytes, &client_message, 24);
 			write(client_sock, client_message, sizeof(client_message));
 		}
 		
 		if(read_size == 0){
 			puts("Client disconnected\n");
+			post_req(&json_bytes[0]);
 			fflush(stdout);
 		}
 		else if(read_size == -1){

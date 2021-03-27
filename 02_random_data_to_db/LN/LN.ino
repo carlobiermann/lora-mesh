@@ -11,7 +11,7 @@ const long frequency = 868E6;  // LoRa Frequency
 #define MISO    19   // GPIO19 -- SX1278's MISnO
 #define MOSI    27   // GPIO27 -- SX1278's MOSI
 
-byte msg[16];
+byte msg[24];
 
 void setup() {
   Serial.begin(9600);                   // initialize serial
@@ -41,25 +41,31 @@ void setup() {
 
 void loop() {
   if (runEvery(10000)) { 
-    
-    // generate random coordinates every 10 seconds
-    signed int iLon = random(-180000000,+180000000);
-    signed int iLat = random(-180000000,+180000000);
-    double lon = iLon;
-    double lat = iLat;
-    lon = lon/1000000;
-    lat = lat/1000000;
 
-    Serial.println("Random Coordinates:");
-    printDouble(lon, 1000000);
-    printDouble(lat, 1000000);
+    // generating random payload
+    int nodeId = random(0, 9);
+    int hops = random(0,4);    
+    int iLat = random(52500000, 52530000);
+    int iLon = random(13200000, 13600000);
+    double lat = iLat;
+    double lon = iLon;
+    lat = lat/1000000;
+    lon = lon/1000000;
+
+    Serial.println("Random node data:");
+    Serial.println(nodeId);
+    Serial.println(hops);
+    printDouble(lat, 10000000);
+    printDouble(lon, 10000000);
 
     // convert to raw byte array
-    memcpy(&msg[0], (uint8_t *) &lon, sizeof(lon));
+    memcpy(&msg[0], (uint8_t *) &nodeId, sizeof(nodeId));
+    memcpy(&msg[4], (uint8_t *) &hops, sizeof(hops));
     memcpy(&msg[8], (uint8_t *) &lat, sizeof(lat));
+    memcpy(&msg[15], (uint8_t *) &lon, sizeof(lon));
  
     Serial.println("Sending raw byte array: ");
-    for (int i=0; i<=15; i++) {
+    for (int i=0; i<=23; i++) {
       Serial.println(msg[i], HEX);
     }
 
@@ -80,7 +86,7 @@ void LoRa_txMode(){
 void LoRa_sendMessage(byte *message) {
   LoRa_txMode();                        // set tx mode
   LoRa.beginPacket();                   // start packet
-  LoRa.write(message, 16);                  // add payload
+  LoRa.write(message, 24);                  // add payload
   LoRa.endPacket(true);                 // finish packet and send it
 }
 

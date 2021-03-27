@@ -29,7 +29,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
-
+#include <time.h>
 /* json-c (https://github.com/json-c/json-c) */
 #include <json-c/json.h>
 
@@ -122,7 +122,7 @@ CURLcode curl_fetch_url(CURL *ch, const char *url, struct curl_fetch_st *fetch) 
     return rcode;
 }
 
-int main(int argc, char *argv[]) {
+int post_req(char * json_bytes) {
     CURL *ch;                                               /* curl handle */
     CURLcode rcode;                                         /* curl result code */
 
@@ -151,12 +151,22 @@ int main(int argc, char *argv[]) {
     /* create json object for post */
     json = json_object_new_object();
 
+    /* decode the json_byte array */
+    int nodeId = *(int*)(&json_bytes[0]);
+    int hops = *(int*)(&json_bytes[4]);
+    double lat = *(double*)(&json_bytes[8]);
+    double lon = *(double*)(&json_bytes[16]);
+    time_t mytime = time(NULL);
+    char * time_str = ctime(&mytime);
+    time_str[strlen(time_str)-1] = '\0';
+
+
     /* build post data */
-    json_object_object_add(json, "nodeID", json_object_new_int(4));
-    json_object_object_add(json, "hops", json_object_new_int(2));
-    json_object_object_add(json, "lat", json_object_new_double(61.1888));
-    json_object_object_add(json, "lon", json_object_new_double(-63.222332));
-    json_object_object_add(json, "date", json_object_new_string("2021-03-25-15-25"));
+    json_object_object_add(json, "nodeID", json_object_new_int(nodeId));
+    json_object_object_add(json, "hops", json_object_new_int(hops));
+    json_object_object_add(json, "lat", json_object_new_double(lat));
+    json_object_object_add(json, "lon", json_object_new_double(lon));
+    json_object_object_add(json, "date", json_object_new_string(time_str));
 
     /* set curl options */
     curl_easy_setopt(ch, CURLOPT_CUSTOMREQUEST, "POST");

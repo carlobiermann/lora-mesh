@@ -12,9 +12,9 @@ var path = require('path');
 
 const Pool = require('pg').Pool
 const pool = new Pool({
-	user: ' ',
-	host: ' ',
-	database: ' ',
+	user: '',
+	host: '',
+	database: '',
 	port: 
 })
 

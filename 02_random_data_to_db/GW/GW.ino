@@ -15,8 +15,8 @@ WiFiMulti WiFiMulti;
 
 const long frequency = 868E6;  // LoRa Frequency
 bool loraRecv = false;
-static byte loraMessage[16] = "";
-static byte serverMsg[16] = "";
+static byte loraMessage[24] = "";
+static byte serverMsg[24] = "";
 
 
 // INIT
@@ -49,7 +49,7 @@ void setup() {
   delay(10);
 
   // We start by connecting to a WiFi network
-  WiFiMulti.addAP("SSID", "PW");
+  WiFiMulti.addAP("", "");
   Serial.print("Waiting for WiFi... ");
 
   while(WiFiMulti.run() != WL_CONNECTED) {
@@ -105,14 +105,14 @@ void LoRa_sendMessage(char *message) {
 void onReceive(int packetSize) {
   
   while (LoRa.available()) {
-    for(int i = 0; i<=15; i++){
+    for(int i = 0; i<=23; i++){
       byte c = LoRa.read();
       loraMessage[i] = c;
   }
   Serial.println("Received bytes from node:");
   
   // Print LoRa Node Message
-    for(int i = 0; i <= 15; i++) {
+    for(int i = 0; i <= 23; i++) {
       Serial.println(loraMessage[i], HEX);
     }
   loraRecv = true;
@@ -138,7 +138,7 @@ boolean runEvery(unsigned long interval)
 
 void sendServer(byte * serverMessage) {
 
-    byte msgBuffer[16] = "";
+    byte msgBuffer[24] = "";
       
     const uint16_t port = 8888;
     const char * host = "192.168.178.50"; // ip or dns
@@ -155,7 +155,7 @@ void sendServer(byte * serverMessage) {
         return;
     }
     // This will send a request to the server
-    client.write(serverMessage, 16);
+    client.write(serverMessage, 24);
 
   int maxloops = 0;
 
@@ -166,7 +166,7 @@ void sendServer(byte * serverMessage) {
   }
   if (client.available() > 0) {
     //read back one line from the server
-    for(int i = 0; i<=15; i++){
+    for(int i = 0; i<=23; i++){
       byte b = client.read();
       msgBuffer[i] = b;
     }
@@ -176,7 +176,7 @@ void sendServer(byte * serverMessage) {
   }    
   // Print Server Message
   Serial.println("Printing Server Reply: ");
-  for(int i = 0; i <=15; i++) {
+  for(int i = 0; i <=23; i++) {
     Serial.println(msgBuffer[i], HEX);
   }
   Serial.println("Closing Server connection");
