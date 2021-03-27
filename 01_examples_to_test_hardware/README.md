@@ -8,7 +8,7 @@ Used boards:
 
 Due to antenna issues of the Heltect modules I decided to continue the project with T-Beams only.
 
-✅  - indicates that the programs have been tested on the hardware.
+✅  indicates that the programs have been tested on the hardware.
 
 
 |Folder    |Description |Sources |Status  |
