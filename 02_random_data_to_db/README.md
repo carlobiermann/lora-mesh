@@ -138,4 +138,4 @@ Open LN sketch in Arduino IDE and upload the sketch
 - Switch from a simulated payload to *real* GPS data
 - Displaying the real-time GPS coordinates on a map with markers 
 - Render the contents of the database to an HTML table
-- **Implementing a Mesh Routing Algorithm**
+- **Implementing a Mesh Routing Algorithm to route payloads from *multiple* LoRa Nodes**
