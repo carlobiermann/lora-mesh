@@ -67,15 +67,19 @@ port:
 
 If not already installed: 
 
-`npm install
-node app.js`
+```
+npm install
+node app.js
+```
 
 **3. Start Socket Server:**
 
 Open new terminal window/tab: 
 
-`cd SS`
-`./main`
+```
+cd SS
+./main
+```
 
 **4. Start Gateway Node (GW)**:
 
