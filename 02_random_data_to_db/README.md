@@ -9,7 +9,7 @@
 
 ## Description
 
-This system inserts a simulated GPS payload from a T-Beam into a database.
+**This system inserts a simulated GPS payload from a T-Beam into a database.**
 
 *Current setup:*
 - 1x LoRa Node -> T-Beam 
