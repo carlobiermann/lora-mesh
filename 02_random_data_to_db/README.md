@@ -1,5 +1,7 @@
 ## Random data to db 
 
+**This system inserts a simulated GPS payload from a T-Beam into a database via LoRa and TCP/IP.**
+
 ![meshdb-simulated](/pics/meshdb-simulated.png)
 
 ## Table of Contents
@@ -10,8 +12,6 @@
 - [Stuff to change](#stuff-to-change)
 
 ## Description
-
-**This system inserts a simulated GPS payload from a T-Beam into a database via LoRa and TCP/IP.**
 
 *Current setup:*
 - 1x LoRa Node -> T-Beam 
