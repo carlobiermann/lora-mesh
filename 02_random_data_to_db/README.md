@@ -42,6 +42,7 @@ Open terminal:
 *Start* database: 
 `brew services start postgresql`
 
+(*Later*)
 *Stop* database: 
 `brew services stop postgresql`
 
