@@ -3,7 +3,7 @@
 |Folder                                                       |Description                                                                 |
 |-------------------------------------------------------------|----------------------------------------------------------------------------|
 |[01_examples_to_test_hardware](/01_examples_to_test_hardware)|Example sketches to test the functionality of the T-Beams. Sources included.|
-|[02_random_data_to_db](/02_random_data_to_db)                |Sending formatted random data payloads from a LoRa Node (LN) to a Gateway (GW) which is connected to a Socket Server and a Database.|
+|[02_random_data_to_db](/02_random_data_to_db)                |Sending formatted random GPS payloads from a LoRa Node (LN) to a Gateway (GW) which is connected to a Socket Server and a Database.|
 
 ## Table of Contents
 
