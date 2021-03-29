@@ -1,3 +1,8 @@
+/* 
+Sources at:
+https://github.com/carlobiermann/lora-mesh/tree/main/02_random_data_to_db#sources
+*/
+
 #include <SPI.h>              // include libraries
 #include <LoRa.h>
 
