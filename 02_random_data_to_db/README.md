@@ -47,21 +47,21 @@ Open terminal:
 
 Open new terminal window: 
 
-`psql meshdb`
+`psql [database name]`
 
 **2. Start Express Server:**
 
 `cd ES`
 
-Enter the following details in **app.js** and **queries.js**:
+Enter the database details in **app.js** and **queries.js**:
 
 ```
 const Pool \= require('pg').Pool
 const pool \= new Pool({
-user: 'carlobiermann',
-host: 'localhost',
-database: 'meshdb',
-port: 5432
+user: ' ',
+host: ' ',
+database: ' ',
+port: 
 }) 
 ```
 
