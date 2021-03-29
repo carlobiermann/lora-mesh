@@ -38,4 +38,4 @@ This project is going to be a research into *how far* a network can be *extended
 
 Other mesh routing projects using LoRa like **[Meshtastic](https://github.com/meshtastic/Meshtastic-device)** and **[Disaster.Radio](https://github.com/sudomesh/disaster-radio)** suggest that the performance of this kind of network is limited to a small number of devices. 
 
-However, increasing the reach of a T-Beam by routing its LoRa packets with two or three hops could already cover an area of multiple kilometers. This could mean having an **emergency routing mechanism** in case of nodes not being within reach of a gateway and **fewer expenses for gateways**.
+However, increasing the reach of a T-Beam by routing its LoRa packets with two or three hops could already cover an area of multiple square kilometers. This could mean having an **emergency routing mechanism** in case of nodes not being within reach of a gateway and **fewer expenses for gateways**.
