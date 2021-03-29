@@ -114,15 +114,15 @@ Open LN sketch in Arduino IDE and upload the sketch
 - [3 ways to display two divs side by side (float, flexbos, CSS grid)](https://coder-coder.com/display-divs-side-by-side/)
 
 
-*[GW](/GW)*
+*[GW](/GW):*
 - [Espressif: WifiClientBasic Example](https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/WiFiClientBasic/WiFiClientBasic.ino)
 - [LoRa.h example: LoRaSimpleGateway](https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaSimpleGateway/LoRaSimpleGateway.ino)
 
-*[LN](/LN)*
+*[LN](/LN):*
 - [LoRa.h example: LoRaSimpleNode](https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaSimpleNode/LoRaSimpleNode.ino)
 - [Arduino Forum: printing a double variable](https://forum.arduino.cc/index.php?topic=44216.0)
 
-*[SS](/SS)*
+*[SS](/SS):*
 - [How to Code a Server and Client in C with Sockets on Linux - Code Examples](https://www.binarytides.com/server-client-example-c-sockets-linux/)
 - [curltest.c](https://gist.github.com/amichaelgrant/080ecdc254fc551c8f6f)
 - [json-c library](https://github.com/json-c/json-c)
