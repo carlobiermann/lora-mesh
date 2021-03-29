@@ -1,5 +1,7 @@
 ## Random data to db 
 
+![meshdb-simulated](/pics/meshdb-simulated.png)
+
 ## Table of Contents
 
 - [Description](#description)
