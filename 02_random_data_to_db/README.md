@@ -67,8 +67,8 @@ port:
 
 If not already installed: 
 
-`npm install`
-`node app.js`
+`npm install
+node app.js`
 
 **3. Start Socket Server:**
 
