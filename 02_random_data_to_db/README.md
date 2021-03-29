@@ -100,32 +100,32 @@ Open LN sketch in Arduino IDE and upload the sketch
 **A list of sources and adopted functions each program is based on:**
 
 *[ES](/ES):*
-[PostgreSQL Documentation](https://www.postgresql.org/docs/8.0/tutorial-arch.html)
-[Node.js, Express.js, and PostgreSQL: CRUD REST API example](https://blog.logrocket.com/nodejs-expressjs-postgresql-crud-rest-api-example/)
-[How To Display Data From MySQL Database Table In Node.Js](https://codingstatus.com/how-to-display-data-from-mysql-database-table-in-node-js/)
-[Stack Overflow: How do I consume the JSON POST data in an Express application](https://stackoverflow.com/questions/10005939/how-do-i-consume-the-json-post-data-in-an-express-application)
-[Step by Step Javascript and Postgres Tutorial using node-postges](https://www.youtube.com/watch?v=ufdHsFClAk0)
-[Tables Generator](https://www.tablesgenerator.com/html_tables)
-[OpenStreetMap & OpenLayers: Creating A Map With Markers](https://mediarealm.com.au/articles/openstreetmap-openlayers-map-markers/)
-[3 ways to display two divs side by side (float, flexbos, CSS grid)](https://coder-coder.com/display-divs-side-by-side/)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/8.0/tutorial-arch.html)
+- [Node.js, Express.js, and PostgreSQL: CRUD REST API example](https://blog.logrocket.com/nodejs-expressjs-postgresql-crud-rest-api-example/)
+- [How To Display Data From MySQL Database Table In Node.Js](https://codingstatus.com/how-to-display-data-from-mysql-database-table-in-node-js/)
+- [Stack Overflow: How do I consume the JSON POST data in an Express application](https://stackoverflow.com/questions/10005939/how-do-i-consume-the-json-post-data-in-an-express-application)
+- [Step by Step Javascript and Postgres Tutorial using node-postges](https://www.youtube.com/watch?v=ufdHsFClAk0)
+- [Tables Generator](https://www.tablesgenerator.com/html_tables)
+- [OpenStreetMap & OpenLayers: Creating A Map With Markers](https://mediarealm.com.au/articles/openstreetmap-openlayers-map-markers/)
+- [3 ways to display two divs side by side (float, flexbos, CSS grid)](https://coder-coder.com/display-divs-side-by-side/)
 
 
 *[GW](/GW)*
-[Espressif: WifiClientBasic Example](https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/WiFiClientBasic/WiFiClientBasic.ino)
-[LoRa.h example: LoRaSimpleGateway](https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaSimpleGateway/LoRaSimpleGateway.ino)
+- [Espressif: WifiClientBasic Example](https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/WiFiClientBasic/WiFiClientBasic.ino)
+- [LoRa.h example: LoRaSimpleGateway](https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaSimpleGateway/LoRaSimpleGateway.ino)
 
 *[LN](/LN)*
-[LoRa.h example: LoRaSimpleNode](https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaSimpleNode/LoRaSimpleNode.ino)
-[Arduino Forum: printing a double variable](https://forum.arduino.cc/index.php?topic=44216.0)
+- [LoRa.h example: LoRaSimpleNode](https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaSimpleNode/LoRaSimpleNode.ino)
+- [Arduino Forum: printing a double variable](https://forum.arduino.cc/index.php?topic=44216.0)
 
 *[SS](/SS)*
-[How to Code a Server and Client in C with Sockets on Linux - Code Examples](https://www.binarytides.com/server-client-example-c-sockets-linux/)
-[curltest.c](https://gist.github.com/amichaelgrant/080ecdc254fc551c8f6f)
-[json-c library](https://github.com/json-c/json-c)
-[Stack Overflow: passing array as function argument in c](https://stackoverflow.com/questions/35699808/passing-array-as-function-argument-c)
-[C library function - memcpy()](https://www.tutorialspoint.com/c_standard_library/c_function_memcpy.htm)
-[Stack Overflow: C header files and compilation/linking](https://stackoverflow.com/questions/18548157/c-header-files-and-compilation-linking)
-[Stack Overflow: Get the current time in C](https://stackoverflow.com/a/18635954)
+- [How to Code a Server and Client in C with Sockets on Linux - Code Examples](https://www.binarytides.com/server-client-example-c-sockets-linux/)
+- [curltest.c](https://gist.github.com/amichaelgrant/080ecdc254fc551c8f6f)
+- [json-c library](https://github.com/json-c/json-c)
+- [Stack Overflow: passing array as function argument in c](https://stackoverflow.com/questions/35699808/passing-array-as-function-argument-c)
+- [C library function - memcpy()](https://www.tutorialspoint.com/c_standard_library/c_function_memcpy.htm)
+- [Stack Overflow: C header files and compilation/linking](https://stackoverflow.com/questions/18548157/c-header-files-and-compilation-linking)
+- [Stack Overflow: Get the current time in C](https://stackoverflow.com/a/18635954)
 
 ## Stuff to change
 
