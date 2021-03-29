@@ -12,20 +12,20 @@
 This system inserts a simulated GPS payload from a T-Beam into a database.
 
 **Current setup:**
-- 1x LoRa Node --> T-Beam 
-- 1x Gateway Node --> T-Beam 
-- 1x Socket Server --> Running on localhost:8000
-- 1x Express Server --> Running on localhost:3000 
-- 1x PostgreSQL Database --> Running on localhost:5432
+- 1x LoRa Node -> T-Beam 
+- 1x Gateway Node -> T-Beam 
+- 1x Socket Server -> Running on localhost:8000
+- 1x Express Server -> Running on localhost:3000 
+- 1x PostgreSQL Database -> Running on localhost:5432
 
 **The data transmission:**
 1. LoRa Node transmits random/simulated **payload** to the **Gateway Node**:
 
 **Payload is a 24 byte array:**
-- nodeId - int --> 4 bytes
-- number of LoRa hops - int --> 4 bytes
-- lat  --> double --> 8 bytes
-- lon --> double --> 8 bytes
+- nodeId -> int -> 4 bytes
+- number of LoRa hops -> int -> 4 bytes
+- lat  -> double -> 8 bytes
+- lon -> double -> 8 bytes
 
 2. Gateway Node receives the payload and forwards the byte array via a socket/TCP/IP **client** instance to the **Socket Server**.
 
