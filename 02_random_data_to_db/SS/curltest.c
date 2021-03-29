@@ -1,3 +1,7 @@
+/* 
+Sources at:
+https://github.com/carlobiermann/lora-mesh/tree/main/02_random_data_to_db#sources
+*/
 
 /**
  * example C code using libcurl and json-c
