@@ -35,9 +35,9 @@ This system inserts a simulated GPS payload from a T-Beam into a database.
 
 #### How to start program 
 
-**Initialize Database:** 
+**1. Initialize Database:** 
 
-1. Open terminal
+Open terminal:
 
 **Start** database: 
 `brew services start postgresql`
@@ -45,11 +45,12 @@ This system inserts a simulated GPS payload from a T-Beam into a database.
 **Stop** database: 
 `brew services stop postgresql`
 
-2. Open new terminal window: 
+Open new terminal window: 
 
 `psql meshdb`
 
-**Start Express Server:**
+**2. Start Express Server:**
+
 `cd ES`
 
 Enter the following details in **app.js** and **queries.js**:
@@ -69,28 +70,29 @@ If not already installed:
 `npm install`
 `node app.js`
 
-**Start Socket Server:**
+**3. Start Socket Server:**
 
 Open new terminal window/tab: 
+
 `cd SS`
 `./main`
 
-
-
-**Start Gateway Node (GW)**:
+**4. Start Gateway Node (GW)**:
 
 `cd GW`
-1. Open GW sketch in Arduino IDE and enter the local Wifi network name and password into: 
+
+Open GW sketch in Arduino IDE and enter the local Wifi network name and password into: 
 
 `WiFiMulti.addAP("", "");`
 
-2- Upload the sketch 
+Upload the sketch 
 
 
-**Start LoRa Node (LN):**
+**5. Start LoRa Node (LN):**
+
 `cd LN`
 
-1. Open LN sketch in Arduino IDE and upload the sketch
+Open LN sketch in Arduino IDE and upload the sketch
 
 
 ## Sources
