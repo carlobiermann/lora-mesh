@@ -1,6 +1,6 @@
-/*
- *	Example from: https://www.binarytides.com/server-client-example-c-sockets-linux/
-	C socket server example
+/* 
+Sources at:
+https://github.com/carlobiermann/lora-mesh/tree/main/02_random_data_to_db#sources
 */
 
 #include<stdio.h>
