@@ -11,17 +11,17 @@
 
 This system inserts a simulated GPS payload from a T-Beam into a database.
 
-**Current setup:**
+*Current setup:*
 - 1x LoRa Node -> T-Beam 
 - 1x Gateway Node -> T-Beam 
 - 1x Socket Server -> Running on localhost:8000
 - 1x Express Server -> Running on localhost:3000 
 - 1x PostgreSQL Database -> Running on localhost:5432
 
-**The data transmission:**
+*The data transmission:*
 1. LoRa Node transmits random/simulated **payload** to the **Gateway Node**:
 
-**Payload is a 24 byte array:**
+*Payload is a 24 byte array:*
 - nodeId -> int -> 4 bytes
 - number of LoRa hops -> int -> 4 bytes
 - lat  -> double -> 8 bytes
@@ -35,21 +35,21 @@ This system inserts a simulated GPS payload from a T-Beam into a database.
 
 #### How to start program 
 
-**1. Initialize Database:** 
+*1. Initialize Database:*
 
 Open terminal:
 
-**Start** database: 
+*Start* database: 
 `brew services start postgresql`
 
-**Stop** database: 
+*Stop* database: 
 `brew services stop postgresql`
 
 Open new terminal window: 
 
 `psql [database name]`
 
-**2. Start Express Server:**
+*2. Start Express Server:*
 
 `cd ES`
 
@@ -72,7 +72,7 @@ npm install
 node app.js
 ```
 
-**3. Start Socket Server:**
+*3. Start Socket Server:*
 
 Open new terminal window/tab: 
 
@@ -81,7 +81,7 @@ cd SS
 ./main
 ```
 
-**4. Start Gateway Node (GW)**:
+*4. Start Gateway Node (GW):*
 
 `cd GW`
 
@@ -92,7 +92,7 @@ Open GW sketch in Arduino IDE and enter the local Wifi network name and password
 Upload the sketch 
 
 
-**5. Start LoRa Node (LN):**
+*5. Start LoRa Node (LN):*
 
 `cd LN`
 
@@ -101,7 +101,7 @@ Open LN sketch in Arduino IDE and upload the sketch
 
 ## Sources
 
-**A list of sources and adopted functions each program is based on:**
+*A list of sources and adopted functions each program is based on:*
 
 *[ES](/ES):*
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/8.0/tutorial-arch.html)
