@@ -94,16 +94,6 @@ void loop() {
 
 // FUNCTIONS
 
-void LoRa_sendAck(byte sender) {
-  byte ack[4] = "ACK";
-  LoRa.beginPacket();                   // start packet
-  LoRa.write(sender);         // send ACK back to sender
-  LoRa.write(localAddress);
-  LoRa.write(sizeof(ack));
-  LoRa.write(ack,4);                  // add payload
-  LoRa.endPacket(true);                 // finish packet and send it
-}
-
 void LoRa_recvPacket(int packetSize) { 
   if (packetSize == 0){ 
     return; 
