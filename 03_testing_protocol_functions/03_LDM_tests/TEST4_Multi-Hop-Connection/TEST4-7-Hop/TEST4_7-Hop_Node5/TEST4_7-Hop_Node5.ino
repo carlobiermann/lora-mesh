@@ -1,12 +1,50 @@
 // Testing MULTI-HOP-Connections
 
 /*
- ______                      ______                   ______
-|Node 2|<------------------>|Node 1|<--------------->|Parent|
- ------                      ------                   ------
-localAddress = 0x22    | localAddress = 0x11   | localAddress = 0xAA
-localNextHopID = 0x11  | localNextHopID = 0xAA | localNextHopID = 0xAA
-localHopCount = 0x02   | localHopCount = 0x01  | localHopCount = 0x00
+ Sender   Repeater Repeater Repeater Repeater Repeater Repeater Receiver
+ ____     ____     ____     ____     ____     ____     ____     ____
+|Nd 7|<->|Nd 6|<->|Nd 5|<->|Nd 4|<->|Nd 3|<->|Nd 2|<->|Nd 1|<->|Prnt|
+ ----     ----     ----     ----     ----     ----     ----     ----
+ 
+Parent: 
+byte localAddress = 0xAA;
+byte localNextHopID = 0xAA;
+byte localHopCount = 0x00
+
+Node 1: 
+byte localAddress = 0x11;
+byte localNextHopID = 0xAA;
+byte localHopCount = 0x01;
+
+Node 2: 
+byte localAddress = 0x22;
+byte localNextHopID = 0x11;
+byte localHopCount = 0x02;
+
+Node 3: 
+byte localAddress = 0x33;
+byte localNextHopID = 0x22;
+byte localHopCount = 0x03;
+
+Node 4:
+byte localAddress = 0x44;
+byte localNextHopID = 0x33;
+byte localHopCount = 0x04;
+
+Node 5:
+byte localAddress = 0x55;
+byte localNextHopID = 0x44;
+byte localHopCount = 0x05;
+
+Node 6:
+byte localAddress = 0x66;
+byte localNextHopID = 0x55;
+byte localHopCount = 0x06;
+
+Node 7:
+byte localAddress = 0x77;
+byte localNextHopID = 0x66;
+byte localHopCount = 0x07;
 */
 
 #include <SPI.h>              
@@ -30,9 +68,9 @@ int nodeMode = 0;
 int i = 0;             // for ldm_frameTester(int i)
 byte routingTable[153] = "";
 byte payload[24] = "";
-byte localAddress = 0x11;    
-byte localNextHopID = 0xAA;
-byte localHopCount = 0x01;
+byte localAddress = 0x55;
+byte localNextHopID = 0x44;
+byte localHopCount = 0x05;
 
 // FUNCTION PROTOTYPES
 void setup(void);
@@ -84,7 +122,8 @@ int ldm_routePayload(
   int mode, 
   byte recipient,
   byte sender, 
-  byte ttl
+  byte ttl,
+  int resend
 );
 int ldm_ackHandshake(
   int mode,
@@ -92,7 +131,8 @@ int ldm_ackHandshake(
   byte router, 
   byte recipient, 
   byte sender, 
-  byte ttl
+  byte ttl,
+  int resend
 );
 bool ldm_waitForAck(byte router, bool debug);
 void ldm_sendFrame(
@@ -131,6 +171,20 @@ void loop(){
   
   if(result != 0){
     Serial.println(result);
+  }
+  
+  if(runEvery(25000)){
+    generatePayload(); 
+  result = ldm_routePayload(
+    nodeMode,           // Node Mode
+    0xAA,               // recipient: Parent
+    localAddress,       // sender
+    0x0F,               // ttl
+    0                   // set resend counter
+  );
+  if(result != 0){
+    Serial.println(result);
+    }
   }
 }
 
@@ -934,7 +988,8 @@ int ldm_frameHandler(
         mode,
         recipient,
         sender,
-        ttl
+        ttl,
+        2    // don't resend when no ack
       );
       
       if(result == 1){
@@ -1053,7 +1108,8 @@ int ldm_routePayload(
   int mode, 
   byte recipient, 
   byte sender,
-  byte ttl
+  byte ttl,
+  int resend
 ){
   // This function sends the GPS payload to the Parent or 
   // localNestHopID depending on Routing Status. Therefore
@@ -1082,7 +1138,8 @@ int ldm_routePayload(
     router,
     recipient, 
     sender,
-    ttl 
+    ttl,
+    resend
   );
   
   if(result == 1){    // ACK received
@@ -1100,7 +1157,8 @@ int ldm_ackHandshake(
   byte router, 
   byte recipient, 
   byte sender,
-  byte ttl
+  byte ttl,
+  int resend
 ){
 
   // This function passes on its arguments to ldm_sendFrame() 
@@ -1113,7 +1171,6 @@ int ldm_ackHandshake(
   
   // A successful handshake will return 1, otherwise 0.
 
-  int resends = 0;
   ldm_sendFrame(
     mode,
     type, 
@@ -1122,10 +1179,9 @@ int ldm_ackHandshake(
     sender, 
     ttl
   );
-  
   bool ack = ldm_waitForAck(router);
   
-  while(!ack && resends < 2){
+  while(!ack && resend<2){
     ldm_sendFrame(
       mode,
       type, 
@@ -1135,7 +1191,7 @@ int ldm_ackHandshake(
       ttl
     );
     ack = ldm_waitForAck(router);
-    resends++;
+    resend++;
   }
   
   if (!ack){
@@ -1220,7 +1276,7 @@ void ldm_sendFrame(
   header[6] = ttl - 1;    // ttl
   
   // delay the transmission of an LDM Frame for a random time interval
-  delay(random(40));
+  delay(random(20));
   
   
   // Send the LDM Frame depending on mode using the LoRa Protocol
@@ -1342,5 +1398,4 @@ void generatePayload(){
   for (int i=0; i<=23; i++) {
     Serial.println(payload[i], HEX);
   }
-  
 }
