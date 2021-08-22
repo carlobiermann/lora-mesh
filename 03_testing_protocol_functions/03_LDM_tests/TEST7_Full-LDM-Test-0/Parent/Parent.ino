@@ -1,10 +1,5 @@
 /*
-All Nodes are filling their Routing Tables and Routing Statuses 
-dynamically. The local Routing Status will be broadcasted to the 
-network every minute, while a random GPS payload will be generated 
-and sent to the Parent every two minutes. The payload also contains a 
-Node's localHopCount. Every Node's hopCount can therefore be displayed
-and observed at the Parent's serial port.
+All Nodes are filling their Routing Tables and Routing Statuses dynamically. 
 
 Node 1: 
 byte localAddress = 0x11;
@@ -45,6 +40,7 @@ Parent:
 byte localAddress = 0xAA;
 byte localNextHopID = 0xAA;
 byte localHopCount = 0x00;
+
 */
 
 #include <SPI.h>              
@@ -64,12 +60,22 @@ byte localHopCount = 0x00;
 const long frequency = 868E6;  
 
 // GLOBAL VARIABLES
-int nodeMode = 0;     
+int parentMode = 1;     
 byte routingTable[153] = "";
 byte payload[24] = "";
-byte localAddress = 0x22;
+byte localAddress = 0xAA;
 byte localNextHopID = 0x00;
 byte localHopCount = 0x00;
+
+// PARENT DIAGNOSTICS
+int node1Rx = 0;
+int node2Rx = 0;
+int node3Rx = 0;
+int node4Rx = 0;
+int node5Rx = 0;
+int node6Rx = 0;
+int node7Rx = 0;
+
 
 // FUNCTION PROTOTYPES
 void setup(void);
@@ -86,7 +92,6 @@ int ldm_insertRoutingTable(
 );
 void ldm_printRoutingTable();
 boolean runEvery(unsigned long interval);
-boolean loop_runEvery(unsigned long interval);
 void ldm_deleteOldEntries();
 bool ldm_checkIfEmpty();
 bool ldm_searchParent();
@@ -118,7 +123,7 @@ int ldm_framehandler(
   byte sender, 
   byte ttl
 );
-bool ldm_waitForAck(byte router, bool debug);
+bool ldm_waitForAck(byte router);
 int ldm_parsePayload();
 int ldm_routePayload(
   int mode, 
@@ -147,7 +152,7 @@ void ldm_sendFrame(
 );
 void generatePayload(void);
 void printDouble(double val, unsigned int precision);
-void resultHandler(int result);
+void ldm_resultHandler(int result);
 
 // FUNCTION DEFINITIONS
 
@@ -169,22 +174,109 @@ void setup(){
 }
 
 void loop(){
-  int result = ldm_daemon(nodeMode);
+  int result = ldm_daemon(parentMode);
   ldm_resultHandler(result);
-
-  if(loop_runEvery(120000)){
-    generatePayload();
-    result = ldm_routePayload(
-      nodeMode,           // Node Mode
-      0xAA,               // recipient: Parent
-      localAddress,       // sender
-      0x0F,               // ttl
-      0                   // set resend counter
-    );
-    if(result != 0){
-      Serial.println(result);
+    if(result == 2){
+      printNodeInfo();
     }
-  }   
+}
+
+int getNodeRxCounter(byte nodeId){
+  int res = 0;
+  switch(nodeId){
+      case 0x11:
+        res = node1Rx;
+        break;
+
+      case 0x22:
+        res = node2Rx;
+        break;
+
+      case 0x33:
+        res = node3Rx;
+        break;
+
+      case 0x44:
+        res = node4Rx;
+        break;
+        
+      case 0x55:
+        res = node5Rx;
+        break;
+
+      case 0x66:
+        res = node6Rx;
+        break;
+
+      case 0x77:
+        res = node7Rx;
+        break;
+  }
+  return res;
+}
+
+void incNodeRxCounter(int nodeId){
+  switch(nodeId){
+    case 17:
+      node1Rx++;
+      break;
+
+    case 34:
+      node2Rx++;
+      break;
+
+    case 51:
+      node3Rx++;
+      break;  
+
+    case 68:
+      node4Rx++;
+      break; 
+
+    case 85:
+      node5Rx++;
+      break; 
+
+    case 102:
+      node6Rx++;
+      break;
+
+    case 119:
+      node7Rx++;
+      break;
+    
+  }
+  
+}
+
+void printNodeInfo(){
+  int nodeId = *(int *) (&payload[0]); 
+  int hopCount = *(int *) (&payload[4]);
+  int nextHop = *(int *) (&payload[8]);
+  int linkRssi = *(int *) (&payload[12]);
+  int attemptedPayloadTx = *(int *) (&payload[16]);
+  incNodeRxCounter(nodeId);
+  int nodeRx = getNodeRxCounter(nodeId);
+  
+  Serial.print("    Received payload from Node ID 0x");
+  Serial.print(nodeId, HEX);
+  Serial.println(":");
+
+  Serial.print("        hopCount:   ");
+  Serial.println(hopCount);
+
+  Serial.print("        nextHop:    ");
+  Serial.println(nextHop, HEX);
+
+  Serial.print("        linkRssi:   ");
+  Serial.println(linkRssi);
+
+  Serial.print("        Attempted Payload Transmissions:                   ");
+  Serial.println(attemptedPayloadTx);
+
+  
+  Serial.print("        Total Payloads Received from this Node:            "); 
+  Serial.println(nodeRx);
 }
 
 bool validateID(byte nodeID){
@@ -336,16 +428,6 @@ void ldm_printRoutingTable(){
     Serial.println(currentTime);
     Serial.println(" ");
   }
-}
-
-boolean loop_runEvery(unsigned long interval){
-  static unsigned long previousMillis = 0;
-  unsigned long currentMillis = millis();
-  if (currentMillis - previousMillis >= interval){
-    previousMillis = currentMillis;
-    return true;
-  }
-  return false;
 }
 
 boolean runEvery(unsigned long interval){
@@ -676,9 +758,9 @@ int ldm_frameHandler(
   if(mode == 1){                // Parent Mode
     if(type == 0x43){           // Type C: Direct PL
       result = ldm_parsePayload();
-      if(result == 1){
+      if(result == 2){
         ldm_sendAckBack(mode, source);
-        return result;          // 1: Success
+        return result;          // 2: Payload Processed
       }
       return result;            // E -2: Parse ERR
     } 
@@ -770,7 +852,7 @@ int ldm_parsePayload(){
       byte c = LoRa.read();
       payload[i] = c;
     }
-    return 1;             // Success
+    return 2;             // Success
   }
   return -2;                // E -2: Payload > 24 bytes
 }
@@ -1039,37 +1121,49 @@ void printDouble( double val, unsigned int precision){
    Serial.println(frac,DEC) ;
 }
 
+// Not needed for parent
+/*
 void generatePayload(){
   Serial.println("Generating random GPS coordinates");
   int nodeId = (int) localAddress;
-  int hops = (int) localHopCount;   
+  int hops = (int) localHopCount; 
+  int nextHopInt = (int) localnextHop;
+  int linkRssi = currentRssi;
+  
+  /*
   int iLat = random(52500000, 52530000);
   int iLon = random(13200000, 13600000);
   double lat = iLat;
   double lon = iLon;
   lat = lat/1000000;
   lon = lon/1000000;
+  
 
-  /*
+  
   Serial.println("Random node data:");
   Serial.println(nodeId);
   Serial.println(hops);
   printDouble(lat, 10000000);
   printDouble(lon, 10000000);
-  */
+  
 
   // convert to raw byte array
   memcpy(&payload[0], (uint8_t *) &nodeId, sizeof(nodeId));
   memcpy(&payload[4], (uint8_t *) &hops, sizeof(hops));
-  memcpy(&payload[8], (uint8_t *) &lat, sizeof(lat));
-  memcpy(&payload[16], (uint8_t *) &lon, sizeof(lon));
+  memcpy(&payload[8], (uint8_t *) &nextHopInt, sizeof(nextHopInt));
+  memcpy(&payload[12], (uint8_t *) &linkRssi, sizeof(linkRssi));
 
   
   Serial.println("Generated byte array: ");
   for (int i=0; i<=23; i++) {
     Serial.println(payload[i], HEX);
   }
+  
 }
+
+*/
+
+
 
 int ldm_bcastRoutingStatus(int mode){
   
@@ -1101,7 +1195,6 @@ int ldm_bcastRoutingStatus(int mode){
   }
   return 1;
 }
-
 
 int ldm_daemon(unsigned int mode){
 
@@ -1135,7 +1228,13 @@ void ldm_resultHandler(int result){
       
     case 1:
       Serial.println("A LDM Frame was processed.");
-      break; 
+      break;
+
+    
+    case 2:
+      Serial.println("A payload was parsed.");
+      break;   
+    
         
     case -1:
       Serial.println("ERROR -1: Routing Status couldn't be set. ");

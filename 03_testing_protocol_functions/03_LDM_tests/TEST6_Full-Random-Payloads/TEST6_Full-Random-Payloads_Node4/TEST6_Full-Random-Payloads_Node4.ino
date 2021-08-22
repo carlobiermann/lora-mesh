@@ -362,14 +362,22 @@ void ldm_deleteOldEntries(){
   
   // This function sets all 19 fields of an entry to 0x00
   // when an entry's time value is older than 3 minutes (180000 ms).
+  long int currentTime = millis(); 
+  long int lastTime = 0;
+  int timeIndex = 0;
+  int difference = 0;
+  int newIndex = 0;
   
   for(int i=0; i<8; i++){
-    long int currentTime = millis(); 
-    long int lastTime = *(long int*)(&routingTable[(i*19)+11]);
+    timeIndex = (i*19) + 11;
     
-    if((currentTime - lastTime) > 180000){
-      for (int j=0; i<18; i++){
-        routingTable[(i*19)+j] = 0x00;
+    lastTime = *(long int*)(&routingTable[timeIndex]);
+    difference = currentTime - lastTime;
+    
+    if(difference > 80000){
+      for (int j=0; j<18; j++){
+        newIndex = (i*19) + j;
+        routingTable[newIndex] = 0x00;
       }
     }
   }
