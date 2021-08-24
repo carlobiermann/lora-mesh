@@ -1,0 +1,771 @@
+
+17:47:30.590 ->     Received payload from Node ID 0x11:
+17:47:30.590 ->         hopCount:   1
+17:47:30.590 ->         nextHop:    0xAA
+17:47:30.590 ->         maxLinkRssi:  -58
+17:47:30.590 ->         Attempted Payload Transmissions:                   1
+17:47:30.590 ->         Total Payloads Received from this Node:            1
+
+17:49:30.574 ->     Received payload from Node ID 0x11:
+17:49:30.574 ->         hopCount:   1
+17:49:30.574 ->         nextHop:    0xAA
+17:49:30.574 ->         maxLinkRssi:  -55
+17:49:30.574 ->         Attempted Payload Transmissions:                   2
+17:49:30.574 ->         Total Payloads Received from this Node:            2
+
+17:50:39.629 ->     Received payload from Node ID 0x33:
+17:50:39.629 ->         hopCount:   1
+17:50:39.629 ->         nextHop:    0xAA
+17:50:39.629 ->         maxLinkRssi:  -54
+17:50:39.629 ->         Attempted Payload Transmissions:                   1
+17:50:39.629 ->         Total Payloads Received from this Node:            1
+
+17:50:56.667 ->     Received payload from Node ID 0x22:
+17:50:56.667 ->         hopCount:   1
+17:50:56.667 ->         nextHop:    0xAA
+17:50:56.667 ->         maxLinkRssi:  -58
+17:50:56.667 ->         Attempted Payload Transmissions:                   1
+17:50:56.667 ->         Total Payloads Received from this Node:            1
+
+17:51:30.594 ->     Received payload from Node ID 0x11:
+17:51:30.594 ->         hopCount:   1
+17:51:30.594 ->         nextHop:    0xAA
+17:51:30.594 ->         maxLinkRssi:  -55
+17:51:30.594 ->         Attempted Payload Transmissions:                   3
+17:51:30.594 ->         Total Payloads Received from this Node:            3
+
+
+17:52:39.604 ->     Received payload from Node ID 0x33:
+17:52:39.604 ->         hopCount:   1
+17:52:39.604 ->         nextHop:    0xAA
+17:52:39.604 ->         maxLinkRssi:  -54
+17:52:39.604 ->         Attempted Payload Transmissions:                   2
+17:52:39.604 ->         Total Payloads Received from this Node:            2
+
+17:52:56.678 ->     Received payload from Node ID 0x22:
+17:52:56.678 ->         hopCount:   1
+17:52:56.678 ->         nextHop:    0xAA
+17:52:56.678 ->         maxLinkRssi:  -58
+17:52:56.678 ->         Attempted Payload Transmissions:                   2
+17:52:56.678 ->         Total Payloads Received from this Node:            2
+
+17:53:30.581 ->     Received payload from Node ID 0x11:
+17:53:30.581 ->         hopCount:   1
+17:53:30.581 ->         nextHop:    0xAA
+17:53:30.581 ->         maxLinkRssi:  -55
+17:53:30.581 ->         Attempted Payload Transmissions:                   4
+17:53:30.581 ->         Total Payloads Received from this Node:            4
+
+17:54:39.642 ->     Received payload from Node ID 0x33:
+17:54:39.642 ->         hopCount:   1
+17:54:39.642 ->         nextHop:    0xAA
+17:54:39.642 ->         maxLinkRssi:  -54
+17:54:39.642 ->         Attempted Payload Transmissions:                   3
+17:54:39.642 ->         Total Payloads Received from this Node:            3
+
+17:54:56.673 ->     Received payload from Node ID 0x22:
+17:54:56.673 ->         hopCount:   1
+17:54:56.673 ->         nextHop:    0xAA
+17:54:56.673 ->         maxLinkRssi:  -56
+17:54:56.673 ->         Attempted Payload Transmissions:                   3
+17:54:56.673 ->         Total Payloads Received from this Node:            3
+
+17:55:30.586 ->     Received payload from Node ID 0x11:
+17:55:30.586 ->         hopCount:   1
+17:55:30.586 ->         nextHop:    0xAA
+17:55:30.586 ->         maxLinkRssi:  -55
+17:55:30.586 ->         Attempted Payload Transmissions:                   5
+17:55:30.586 ->         Total Payloads Received from this Node:            5
+
+17:56:39.610 ->     Received payload from Node ID 0x33:
+17:56:39.610 ->         hopCount:   1
+17:56:39.610 ->         nextHop:    0xAA
+17:56:39.610 ->         maxLinkRssi:  -54
+17:56:39.610 ->         Attempted Payload Transmissions:                   4
+17:56:39.610 ->         Total Payloads Received from this Node:            4
+
+17:56:56.636 ->     Received payload from Node ID 0x22:
+17:56:56.636 ->         hopCount:   1
+17:56:56.636 ->         nextHop:    0xAA
+17:56:56.636 ->         maxLinkRssi:  -56
+17:56:56.636 ->         Attempted Payload Transmissions:                   4
+17:56:56.636 ->         Total Payloads Received from this Node:            4
+
+17:57:30.577 ->     Received payload from Node ID 0x11:
+17:57:30.577 ->         hopCount:   1
+17:57:30.577 ->         nextHop:    0xAA
+17:57:30.577 ->         maxLinkRssi:  -55
+17:57:30.577 ->         Attempted Payload Transmissions:                   6
+17:57:30.577 ->         Total Payloads Received from this Node:            6
+
+17:58:39.650 ->     Received payload from Node ID 0x33:
+17:58:39.650 ->         hopCount:   1
+17:58:39.650 ->         nextHop:    0xAA
+17:58:39.650 ->         maxLinkRssi:  -54
+17:58:39.650 ->         Attempted Payload Transmissions:                   5
+17:58:39.650 ->         Total Payloads Received from this Node:            5
+
+17:58:56.652 ->     Received payload from Node ID 0x22:
+17:58:56.652 ->         hopCount:   1
+17:58:56.652 ->         nextHop:    0xAA
+17:58:56.652 ->         maxLinkRssi:  -56
+17:58:56.652 ->         Attempted Payload Transmissions:                   5
+17:58:56.652 ->         Total Payloads Received from this Node:            5
+
+17:59:26.005 ->     Received payload from Node ID 0x55:
+17:59:26.005 ->         hopCount:   1
+17:59:26.005 ->         nextHop:    0xAA
+17:59:26.005 ->         maxLinkRssi:  -64
+17:59:26.005 ->         Attempted Payload Transmissions:                   1
+17:59:26.005 ->         Total Payloads Received from this Node:            1
+
+17:59:30.570 ->     Received payload from Node ID 0x11:
+17:59:30.570 ->         hopCount:   1
+17:59:30.570 ->         nextHop:    0xAA
+17:59:30.570 ->         maxLinkRssi:  -55
+17:59:30.570 ->         Attempted Payload Transmissions:                   7
+17:59:30.570 ->         Total Payloads Received from this Node:            7
+
+17:59:54.958 ->     Received payload from Node ID 0x77:
+17:59:54.958 ->         hopCount:   1
+17:59:54.958 ->         nextHop:    0xAA
+17:59:54.958 ->         maxLinkRssi:  -60
+17:59:54.958 ->         Attempted Payload Transmissions:                   1
+17:59:54.958 ->         Total Payloads Received from this Node:            1
+
+18:00:17.397 ->     Received payload from Node ID 0x44:
+18:00:17.397 ->         hopCount:   1
+18:00:17.397 ->         nextHop:    0xAA
+18:00:17.397 ->         maxLinkRssi:  -61
+18:00:17.397 ->         Attempted Payload Transmissions:                   1
+18:00:17.397 ->         Total Payloads Received from this Node:            1
+
+18:00:39.612 ->     Received payload from Node ID 0x33:
+18:00:39.612 ->         hopCount:   1
+18:00:39.612 ->         nextHop:    0xAA
+18:00:39.612 ->         maxLinkRssi:  -54
+18:00:39.612 ->         Attempted Payload Transmissions:                   6
+18:00:39.612 ->         Total Payloads Received from this Node:            6
+
+18:00:43.293 ->     Received payload from Node ID 0x66:
+18:00:43.293 ->         hopCount:   1
+18:00:43.293 ->         nextHop:    0xAA
+18:00:43.293 ->         maxLinkRssi:  -60
+18:00:43.293 ->         Attempted Payload Transmissions:                   1
+18:00:43.293 ->         Total Payloads Received from this Node:            1
+
+18:00:56.667 ->     Received payload from Node ID 0x22:
+18:00:56.667 ->         hopCount:   1
+18:00:56.667 ->         nextHop:    0xAA
+18:00:56.667 ->         maxLinkRssi:  -56
+18:00:56.667 ->         Attempted Payload Transmissions:                   6
+18:00:56.667 ->         Total Payloads Received from this Node:            6
+
+18:01:25.982 ->     Received payload from Node ID 0x55:
+18:01:25.982 ->         hopCount:   1
+18:01:25.982 ->         nextHop:    0xAA
+18:01:25.982 ->         maxLinkRssi:  -87
+18:01:25.982 ->         Attempted Payload Transmissions:                   2
+18:01:25.982 ->         Total Payloads Received from this Node:            2
+
+18:01:30.589 ->     Received payload from Node ID 0x11:
+18:01:30.589 ->         hopCount:   1
+18:01:30.589 ->         nextHop:    0xAA
+18:01:30.589 ->         maxLinkRssi:  -55
+18:01:30.589 ->         Attempted Payload Transmissions:                   8
+18:01:30.589 ->         Total Payloads Received from this Node:            8
+
+18:01:54.960 ->     Received payload from Node ID 0x77:
+18:01:54.960 ->         hopCount:   1
+18:01:54.960 ->         nextHop:    0xAA
+18:01:54.960 ->         maxLinkRssi:  -89
+18:01:54.960 ->         Attempted Payload Transmissions:                   2
+18:01:54.960 ->         Total Payloads Received from this Node:            2
+
+18:02:19.355 ->     Received payload from Node ID 0x44:
+18:02:19.355 ->         hopCount:   1
+18:02:19.355 ->         nextHop:    0xAA
+18:02:19.355 ->         maxLinkRssi:  -88
+18:02:19.355 ->         Attempted Payload Transmissions:                   3
+18:02:19.355 ->         Total Payloads Received from this Node:            2
+
+18:02:39.623 ->     Received payload from Node ID 0x33:
+18:02:39.623 ->         hopCount:   1
+18:02:39.623 ->         nextHop:    0xAA
+18:02:39.623 ->         maxLinkRssi:  -54
+18:02:39.623 ->         Attempted Payload Transmissions:                   7
+18:02:39.623 ->         Total Payloads Received from this Node:            7
+
+18:02:43.309 ->     Received payload from Node ID 0x66:
+18:02:43.309 ->         hopCount:   1
+18:02:43.309 ->         nextHop:    0xAA
+18:02:43.309 ->         maxLinkRssi:  -91
+18:02:43.309 ->         Attempted Payload Transmissions:                   2
+18:02:43.309 ->         Total Payloads Received from this Node:            2
+
+18:02:56.675 ->     Received payload from Node ID 0x22:
+18:02:56.675 ->         hopCount:   1
+18:02:56.675 ->         nextHop:    0xAA
+18:02:56.675 ->         maxLinkRssi:  -56
+18:02:56.675 ->         Attempted Payload Transmissions:                   7
+18:02:56.675 ->         Total Payloads Received from this Node:            7
+
+18:03:25.995 ->     Received payload from Node ID 0x55:
+18:03:25.995 ->         hopCount:   1
+18:03:25.995 ->         nextHop:    0xAA
+18:03:25.995 ->         maxLinkRssi:  -109
+18:03:25.995 ->         Attempted Payload Transmissions:                   3
+18:03:25.995 ->         Total Payloads Received from this Node:            3
+
+18:03:30.615 ->     Received payload from Node ID 0x11:
+18:03:30.615 ->         hopCount:   1
+18:03:30.615 ->         nextHop:    0xAA
+18:03:30.615 ->         maxLinkRssi:  -55
+18:03:30.615 ->         Attempted Payload Transmissions:                   9
+18:03:30.615 ->         Total Payloads Received from this Node:            9
+
+18:03:55.078 ->     Received payload from Node ID 0x77:
+18:03:55.078 ->         hopCount:   2
+18:03:55.078 ->         nextHop:    0x66
+18:03:55.078 ->         maxLinkRssi:  -7
+18:03:55.078 ->         Attempted Payload Transmissions:                   3
+18:03:55.078 ->         Total Payloads Received from this Node:            3
+
+18:04:39.634 ->     Received payload from Node ID 0x33:
+18:04:39.634 ->         hopCount:   1
+18:04:39.634 ->         nextHop:    0xAA
+18:04:39.634 ->         maxLinkRssi:  -54
+18:04:39.634 ->         Attempted Payload Transmissions:                   8
+18:04:39.634 ->         Total Payloads Received from this Node:            8
+
+18:04:41.615 ->     Received payload from Node ID 0x33:
+18:04:41.615 ->         hopCount:   1
+18:04:41.615 ->         nextHop:    0xAA
+18:04:41.615 ->         maxLinkRssi:  -54
+18:04:41.615 ->         Attempted Payload Transmissions:                   9
+18:04:41.615 ->         Total Payloads Received from this Node:            9
+
+18:04:47.295 ->     Received payload from Node ID 0x66:
+18:04:47.295 ->         hopCount:   1
+18:04:47.295 ->         nextHop:    0xAA
+18:04:47.295 ->         maxLinkRssi:  -112
+18:04:47.295 ->         Attempted Payload Transmissions:                   6
+18:04:47.295 ->         Total Payloads Received from this Node:            3
+
+18:04:56.668 ->     Received payload from Node ID 0x22:
+18:04:56.668 ->         hopCount:   1
+18:04:56.668 ->         nextHop:    0xAA
+18:04:56.668 ->         maxLinkRssi:  -56
+18:04:56.668 ->         Attempted Payload Transmissions:                   8
+18:04:56.668 ->         Total Payloads Received from this Node:            8
+
+18:05:28.007 ->     Received payload from Node ID 0x55:
+18:05:28.007 ->         hopCount:   1
+18:05:28.007 ->         nextHop:    0xAA
+18:05:28.007 ->         maxLinkRssi:  -109
+18:05:28.007 ->         Attempted Payload Transmissions:                   7
+18:05:28.007 ->         Total Payloads Received from this Node:            4
+
+18:05:30.598 ->     Received payload from Node ID 0x11:
+18:05:30.598 ->         hopCount:   1
+18:05:30.598 ->         nextHop:    0xAA
+18:05:30.598 ->         maxLinkRssi:  -55
+18:05:30.598 ->         Attempted Payload Transmissions:                   10
+18:05:30.598 ->         Total Payloads Received from this Node:            10
+
+18:06:39.636 ->     Received payload from Node ID 0x33:
+18:06:39.636 ->         hopCount:   1
+18:06:39.636 ->         nextHop:    0xAA
+18:06:39.636 ->         maxLinkRssi:  -54
+18:06:39.636 ->         Attempted Payload Transmissions:                   10
+18:06:39.636 ->         Total Payloads Received from this Node:            10
+
+18:06:56.656 ->     Received payload from Node ID 0x22:
+18:06:56.656 ->         hopCount:   1
+18:06:56.656 ->         nextHop:    0xAA
+18:06:56.656 ->         maxLinkRssi:  -56
+18:06:56.656 ->         Attempted Payload Transmissions:                   9
+18:06:56.656 ->         Total Payloads Received from this Node:            9
+
+18:07:30.589 ->     Received payload from Node ID 0x11:
+18:07:30.589 ->         hopCount:   1
+18:07:30.589 ->         nextHop:    0xAA
+18:07:30.589 ->         maxLinkRssi:  -55
+18:07:30.589 ->         Attempted Payload Transmissions:                   11
+18:07:30.589 ->         Total Payloads Received from this Node:            11
+
+18:08:39.710 ->     Received payload from Node ID 0x33:
+18:08:39.710 ->         hopCount:   2
+18:08:39.710 ->         nextHop:    0x22
+18:08:39.710 ->         maxLinkRssi:  -20
+18:08:39.710 ->         Attempted Payload Transmissions:                   10
+18:08:39.710 ->         Total Payloads Received from this Node:            11
+
+18:08:56.687 ->     Received payload from Node ID 0x22:
+18:08:56.687 ->         hopCount:   1
+18:08:56.687 ->         nextHop:    0xAA
+18:08:56.687 ->         maxLinkRssi:  -56
+18:08:56.687 ->         Attempted Payload Transmissions:                   11
+18:08:56.687 ->         Total Payloads Received from this Node:            10
+
+18:09:30.600 ->     Received payload from Node ID 0x11:
+18:09:30.600 ->         hopCount:   1
+18:09:30.600 ->         nextHop:    0xAA
+18:09:30.600 ->         maxLinkRssi:  -55
+18:09:30.600 ->         Attempted Payload Transmissions:                   12
+18:09:30.600 ->         Total Payloads Received from this Node:            12
+
+18:10:56.667 ->     Received payload from Node ID 0x22:
+18:10:56.667 ->         hopCount:   1
+18:10:56.667 ->         nextHop:    0xAA
+18:10:56.667 ->         maxLinkRssi:  -56
+18:10:56.667 ->         Attempted Payload Transmissions:                   12
+18:10:56.667 ->         Total Payloads Received from this Node:            11
+
+18:13:30.591 ->     Received payload from Node ID 0x11:
+18:13:30.591 ->         hopCount:   1
+18:13:30.591 ->         nextHop:    0xAA
+18:13:30.591 ->         maxLinkRssi:  -57
+18:13:30.591 ->         Attempted Payload Transmissions:                   16
+18:13:30.591 ->         Total Payloads Received from this Node:            13
+
+18:14:41.633 ->     Received payload from Node ID 0x33:
+18:14:41.633 ->         hopCount:   1
+18:14:41.633 ->         nextHop:    0xAA
+18:14:41.633 ->         maxLinkRssi:  -64
+18:14:41.633 ->         Attempted Payload Transmissions:                   19
+18:14:41.633 ->         Total Payloads Received from this Node:            12
+
+18:15:30.571 ->     Received payload from Node ID 0x11:
+18:15:30.571 ->         hopCount:   1
+18:15:30.571 ->         nextHop:    0xAA
+18:15:30.571 ->         maxLinkRssi:  -55
+18:15:30.571 ->         Attempted Payload Transmissions:                   17
+18:15:30.571 ->         Total Payloads Received from this Node:            14
+
+18:16:21.633 ->     Received payload from Node ID 0x44:
+18:16:21.633 ->         hopCount:   2
+18:16:21.633 ->         nextHop:    0x66
+18:16:21.633 ->         maxLinkRssi:  -10
+18:16:21.633 ->         Attempted Payload Transmissions:                   20
+18:16:21.633 ->         Total Payloads Received from this Node:            3
+
+18:16:39.626 ->     Received payload from Node ID 0x33:
+18:16:39.626 ->         hopCount:   1
+18:16:39.626 ->         nextHop:    0xAA
+18:16:39.626 ->         maxLinkRssi:  -62
+18:16:39.626 ->         Attempted Payload Transmissions:                   21
+18:16:39.626 ->         Total Payloads Received from this Node:            13
+
+18:17:02.939 ->     Received payload from Node ID 0x22:
+18:17:02.939 ->         hopCount:   3
+18:17:02.939 ->         nextHop:    0x44
+18:17:02.939 ->         maxLinkRssi:  -111
+18:17:02.939 ->         Attempted Payload Transmissions:                   18
+18:17:02.939 ->         Total Payloads Received from this Node:            12
+
+18:17:26.221 ->     Received payload from Node ID 0x55:
+18:17:26.221 ->         hopCount:   3
+18:17:26.221 ->         nextHop:    0x44
+18:17:26.221 ->         maxLinkRssi:  -3
+18:17:26.221 ->         Attempted Payload Transmissions:                   19
+18:17:26.221 ->         Total Payloads Received from this Node:            5
+
+18:17:30.578 ->     Received payload from Node ID 0x11:
+18:17:30.578 ->         hopCount:   1
+18:17:30.578 ->         nextHop:    0xAA
+18:17:30.578 ->         maxLinkRssi:  -55
+18:17:30.578 ->         Attempted Payload Transmissions:                   20
+18:17:30.578 ->         Total Payloads Received from this Node:            15
+
+18:17:44.799 ->     Received payload from Node ID 0x77:
+18:17:44.799 ->         hopCount:   2
+18:17:44.799 ->         nextHop:    0x11
+18:17:44.799 ->         maxLinkRssi:  -112
+18:17:44.799 ->         Attempted Payload Transmissions:                   21
+18:17:44.799 ->         Total Payloads Received from this Node:            4
+
+18:18:39.619 ->     Received payload from Node ID 0x33:
+18:18:39.619 ->         hopCount:   1
+18:18:39.619 ->         nextHop:    0xAA
+18:18:39.619 ->         maxLinkRssi:  -62
+18:18:39.619 ->         Attempted Payload Transmissions:                   22
+18:18:39.619 ->         Total Payloads Received from this Node:            14
+
+18:18:56.762 ->     Received payload from Node ID 0x22:
+18:18:56.762 ->         hopCount:   2
+18:18:56.762 ->         nextHop:    0x33
+18:18:56.762 ->         maxLinkRssi:  -25
+18:18:56.762 ->         Attempted Payload Transmissions:                   23
+18:18:56.762 ->         Total Payloads Received from this Node:            13
+
+18:19:30.579 ->     Received payload from Node ID 0x11:
+18:19:30.579 ->         hopCount:   1
+18:19:30.579 ->         nextHop:    0xAA
+18:19:30.579 ->         maxLinkRssi:  -55
+18:19:30.579 ->         Attempted Payload Transmissions:                   22
+18:19:30.579 ->         Total Payloads Received from this Node:            16
+
+18:20:12.584 ->     Received payload from Node ID 0x55:
+18:20:12.584 ->         hopCount:   2
+18:20:12.584 ->         nextHop:    0x22
+18:20:12.584 ->         maxLinkRssi:  -112
+18:20:12.584 ->         Attempted Payload Transmissions:                   24
+18:20:12.584 ->         Total Payloads Received from this Node:            6
+
+18:20:39.647 ->     Received payload from Node ID 0x33:
+18:20:39.647 ->         hopCount:   1
+18:20:39.647 ->         nextHop:    0xAA
+18:20:39.647 ->         maxLinkRssi:  -62
+18:20:39.647 ->         Attempted Payload Transmissions:                   24
+18:20:39.647 ->         Total Payloads Received from this Node:            15
+
+18:20:56.663 ->     Received payload from Node ID 0x22:
+18:20:56.663 ->         hopCount:   1
+18:20:56.663 ->         nextHop:    0xAA
+18:20:56.663 ->         maxLinkRssi:  -59
+18:20:56.663 ->         Attempted Payload Transmissions:                   25
+18:20:56.663 ->         Total Payloads Received from this Node:            14
+
+18:21:11.351 ->     Received payload from Node ID 0x66:
+18:21:11.351 ->         hopCount:   2
+18:21:11.351 ->         nextHop:    0x33
+18:21:11.351 ->         maxLinkRssi:  -112
+18:21:11.351 ->         Attempted Payload Transmissions:                   25
+18:21:11.351 ->         Total Payloads Received from this Node:            4
+
+18:21:44.801 ->     Received payload from Node ID 0x77:
+18:21:44.801 ->         hopCount:   2
+18:21:44.801 ->         nextHop:    0x22
+18:21:44.801 ->         maxLinkRssi:  -112
+18:21:44.801 ->         Attempted Payload Transmissions:                   26
+18:21:44.801 ->         Total Payloads Received from this Node:            5
+
+18:21:50.979 ->     Received payload from Node ID 0x44:
+18:21:50.979 ->         hopCount:   3
+18:21:50.979 ->         nextHop:    0x55
+18:21:50.979 ->         maxLinkRssi:  -3
+18:21:50.979 ->         Attempted Payload Transmissions:                   27
+18:21:50.979 ->         Total Payloads Received from this Node:            4
+
+18:22:12.602 ->     Received payload from Node ID 0x55:
+18:22:12.602 ->         hopCount:   2
+18:22:12.602 ->         nextHop:    0x22
+18:22:12.602 ->         maxLinkRssi:  -111
+18:22:12.602 ->         Attempted Payload Transmissions:                   28
+18:22:12.602 ->         Total Payloads Received from this Node:            7
+
+18:22:39.681 ->     Received payload from Node ID 0x33:
+18:22:39.681 ->         hopCount:   1
+18:22:39.681 ->         nextHop:    0xAA
+18:22:39.681 ->         maxLinkRssi:  -62
+18:22:39.681 ->         Attempted Payload Transmissions:                   26
+18:22:39.681 ->         Total Payloads Received from this Node:            16
+
+18:22:56.699 ->     Received payload from Node ID 0x22:
+18:22:56.699 ->         hopCount:   1
+18:22:56.699 ->         nextHop:    0xAA
+18:22:56.699 ->         maxLinkRssi:  -58
+18:22:56.699 ->         Attempted Payload Transmissions:                   29
+18:22:56.699 ->         Total Payloads Received from this Node:            15
+
+18:23:11.365 ->     Received payload from Node ID 0x66:
+18:23:11.365 ->         hopCount:   2
+18:23:11.365 ->         nextHop:    0x22
+18:23:11.365 ->         maxLinkRssi:  -111
+18:23:11.365 ->         Attempted Payload Transmissions:                   30
+18:23:11.365 ->         Total Payloads Received from this Node:            5
+
+18:23:30.648 ->     Received payload from Node ID 0x11:
+18:23:30.648 ->         hopCount:   2
+18:23:30.648 ->         nextHop:    0x33
+18:23:30.648 ->         maxLinkRssi:  -52
+18:23:30.648 ->         Attempted Payload Transmissions:                   27
+18:23:30.648 ->         Total Payloads Received from this Node:            17
+
+18:23:44.828 ->     Received payload from Node ID 0x77:
+18:23:44.828 ->         hopCount:   2
+18:23:44.828 ->         nextHop:    0x22
+18:23:44.828 ->         maxLinkRssi:  -111
+18:23:44.828 ->         Attempted Payload Transmissions:                   31
+18:23:44.828 ->         Total Payloads Received from this Node:            6
+
+18:23:50.931 ->     Received payload from Node ID 0x44:
+18:23:50.931 ->         hopCount:   3
+18:23:50.931 ->         nextHop:    0x55
+18:23:50.931 ->         maxLinkRssi:  -3
+18:23:50.931 ->         Attempted Payload Transmissions:                   32
+18:23:50.931 ->         Total Payloads Received from this Node:            5
+
+18:24:12.574 ->     Received payload from Node ID 0x55:
+18:24:12.574 ->         hopCount:   2
+18:24:12.574 ->         nextHop:    0x22
+18:24:12.574 ->         maxLinkRssi:  -110
+18:24:12.574 ->         Attempted Payload Transmissions:                   33
+18:24:12.574 ->         Total Payloads Received from this Node:            8
+
+18:24:39.671 ->     Received payload from Node ID 0x33:
+18:24:39.671 ->         hopCount:   1
+18:24:39.671 ->         nextHop:    0xAA
+18:24:39.671 ->         maxLinkRssi:  -62
+18:24:39.671 ->         Attempted Payload Transmissions:                   28
+18:24:39.671 ->         Total Payloads Received from this Node:            17
+
+18:24:56.682 ->     Received payload from Node ID 0x22:
+18:24:56.682 ->         hopCount:   1
+18:24:56.682 ->         nextHop:    0xAA
+18:24:56.682 ->         maxLinkRssi:  -58
+18:24:56.682 ->         Attempted Payload Transmissions:                   34
+18:24:56.682 ->         Total Payloads Received from this Node:            16
+
+18:26:12.565 ->     Received payload from Node ID 0x55:
+18:26:12.565 ->         hopCount:   2
+18:26:12.565 ->         nextHop:    0x22
+18:26:12.565 ->         maxLinkRssi:  -100
+18:26:12.565 ->         Attempted Payload Transmissions:                   42
+18:26:12.565 ->         Total Payloads Received from this Node:            9
+
+18:26:39.609 ->     Received payload from Node ID 0x33:
+18:26:39.609 ->         hopCount:   1
+18:26:39.609 ->         nextHop:    0xAA
+18:26:39.609 ->         maxLinkRssi:  -62
+18:26:39.609 ->         Attempted Payload Transmissions:                   32
+18:26:39.609 ->         Total Payloads Received from this Node:            18
+
+18:26:56.853 ->     Received payload from Node ID 0x22:
+18:26:56.853 ->         hopCount:   3
+18:26:56.853 ->         nextHop:    0x11
+18:26:56.853 ->         maxLinkRssi:  -48
+18:26:56.853 ->         Attempted Payload Transmissions:                   33
+18:26:56.853 ->         Total Payloads Received from this Node:            17
+
+18:27:11.289 ->     Received payload from Node ID 0x66:
+18:27:11.289 ->         hopCount:   1
+18:27:11.289 ->         nextHop:    0xAA
+18:27:11.289 ->         maxLinkRssi:  -104
+18:27:11.289 ->         Attempted Payload Transmissions:                   17
+18:27:11.289 ->         Total Payloads Received from this Node:            6
+
+18:27:30.629 ->     Received payload from Node ID 0x11:
+18:27:30.629 ->         hopCount:   2
+18:27:30.629 ->         nextHop:    0x33
+18:27:30.629 ->         maxLinkRssi:  -52
+18:27:30.629 ->         Attempted Payload Transmissions:                   34
+18:27:30.629 ->         Total Payloads Received from this Node:            18
+
+18:27:48.976 ->     Received payload from Node ID 0x77:
+18:27:48.976 ->         hopCount:   2
+18:27:48.976 ->         nextHop:    0x22
+18:27:48.976 ->         maxLinkRssi:  -96
+18:27:48.976 ->         Attempted Payload Transmissions:                   35
+18:27:48.976 ->         Total Payloads Received from this Node:            7
+
+18:27:51.141 ->     Received payload from Node ID 0x44:
+18:27:51.141 ->         hopCount:   3
+18:27:51.141 ->         nextHop:    0x55
+18:27:51.141 ->         maxLinkRssi:  -3
+18:27:51.141 ->         Attempted Payload Transmissions:                   36
+18:27:51.141 ->         Total Payloads Received from this Node:            6
+
+18:28:12.745 ->     Received payload from Node ID 0x55:
+18:28:12.745 ->         hopCount:   2
+18:28:12.745 ->         nextHop:    0x22
+18:28:12.745 ->         maxLinkRssi:  -87
+18:28:12.745 ->         Attempted Payload Transmissions:                   37
+18:28:12.745 ->         Total Payloads Received from this Node:            10
+
+18:28:39.657 ->     Received payload from Node ID 0x33:
+18:28:39.657 ->         hopCount:   1
+18:28:39.657 ->         nextHop:    0xAA
+18:28:39.657 ->         maxLinkRssi:  -62
+18:28:39.657 ->         Attempted Payload Transmissions:                   38
+18:28:39.657 ->         Total Payloads Received from this Node:            19
+
+18:28:56.857 ->     Received payload from Node ID 0x22:
+18:28:56.857 ->         hopCount:   3
+18:28:56.857 ->         nextHop:    0x11
+18:28:56.857 ->         maxLinkRssi:  -47
+18:28:56.857 ->         Attempted Payload Transmissions:                   39
+18:28:56.857 ->         Total Payloads Received from this Node:            18
+
+18:29:11.279 ->     Received payload from Node ID 0x66:
+18:29:11.279 ->         hopCount:   1
+18:29:11.279 ->         nextHop:    0xAA
+18:29:11.279 ->         maxLinkRssi:  -102
+18:29:11.279 ->         Attempted Payload Transmissions:                   18
+18:29:11.279 ->         Total Payloads Received from this Node:            7
+
+18:29:30.645 ->     Received payload from Node ID 0x11:
+18:29:30.645 ->         hopCount:   2
+18:29:30.645 ->         nextHop:    0x33
+18:29:30.645 ->         maxLinkRssi:  -52
+18:29:30.645 ->         Attempted Payload Transmissions:                   40
+18:29:30.645 ->         Total Payloads Received from this Node:            19
+
+18:29:51.140 ->     Received payload from Node ID 0x44:
+18:29:51.140 ->         hopCount:   3
+18:29:51.140 ->         nextHop:    0x55
+18:29:51.140 ->         maxLinkRssi:  -3
+18:29:51.140 ->         Attempted Payload Transmissions:                   42
+18:29:51.140 ->         Total Payloads Received from this Node:            7
+
+18:29:53.014 ->     Received payload from Node ID 0x77:
+18:29:53.014 ->         hopCount:   2
+18:29:53.014 ->         nextHop:    0x22
+18:29:53.014 ->         maxLinkRssi:  -96
+18:29:53.014 ->         Attempted Payload Transmissions:                   43
+18:29:53.014 ->         Total Payloads Received from this Node:            8
+
+18:30:12.732 ->     Received payload from Node ID 0x55:
+18:30:12.732 ->         hopCount:   2
+18:30:12.732 ->         nextHop:    0x22
+18:30:12.732 ->         maxLinkRssi:  -86
+18:30:12.732 ->         Attempted Payload Transmissions:                   44
+18:30:12.732 ->         Total Payloads Received from this Node:            11
+
+18:30:39.632 ->     Received payload from Node ID 0x33:
+18:30:39.632 ->         hopCount:   1
+18:30:39.632 ->         nextHop:    0xAA
+18:30:39.632 ->         maxLinkRssi:  -62
+18:30:39.632 ->         Attempted Payload Transmissions:                   45
+18:30:39.632 ->         Total Payloads Received from this Node:            20
+
+18:31:02.844 ->     Received payload from Node ID 0x22:
+18:31:02.844 ->         hopCount:   3
+18:31:02.844 ->         nextHop:    0x11
+18:31:02.844 ->         maxLinkRssi:  -46
+18:31:02.844 ->         Attempted Payload Transmissions:                   47
+18:31:02.844 ->         Total Payloads Received from this Node:            19
+
+18:31:11.261 ->     Received payload from Node ID 0x66:
+18:31:11.261 ->         hopCount:   1
+18:31:11.261 ->         nextHop:    0xAA
+18:31:11.261 ->         maxLinkRssi:  -101
+18:31:11.261 ->         Attempted Payload Transmissions:                   19
+18:31:11.261 ->         Total Payloads Received from this Node:            8
+
+18:31:30.739 ->     Received payload from Node ID 0x11:
+18:31:30.739 ->         hopCount:   2
+18:31:30.739 ->         nextHop:    0x33
+18:31:30.739 ->         maxLinkRssi:  -52
+18:31:30.739 ->         Attempted Payload Transmissions:                   20
+18:31:30.739 ->         Total Payloads Received from this Node:            20
+
+18:32:39.718 ->     Received payload from Node ID 0x33:
+18:32:39.718 ->         hopCount:   2
+18:32:39.718 ->         nextHop:    0x66
+18:32:39.718 ->         maxLinkRssi:  -62
+18:32:39.718 ->         Attempted Payload Transmissions:                   21
+18:32:39.718 ->         Total Payloads Received from this Node:            21
+
+18:33:11.257 ->     Received payload from Node ID 0x66:
+18:33:11.257 ->         hopCount:   1
+18:33:11.257 ->         nextHop:    0xAA
+18:33:11.257 ->         maxLinkRssi:  -60
+18:33:11.257 ->         Attempted Payload Transmissions:                   22
+18:33:11.257 ->         Total Payloads Received from this Node:            9
+
+18:34:12.487 ->     Received payload from Node ID 0x55:
+18:34:12.487 ->         hopCount:   1
+18:34:12.487 ->         nextHop:    0xAA
+18:34:12.487 ->         maxLinkRssi:  -54
+18:34:12.487 ->         Attempted Payload Transmissions:                   18
+18:34:12.487 ->         Total Payloads Received from this Node:            12
+
+18:34:39.736 ->     Received payload from Node ID 0x33:
+18:34:39.736 ->         hopCount:   2
+18:34:39.736 ->         nextHop:    0x66
+18:34:39.736 ->         maxLinkRssi:  -44
+18:34:39.736 ->         Attempted Payload Transmissions:                   23
+18:34:39.736 ->         Total Payloads Received from this Node:            22
+
+18:34:56.749 ->     Received payload from Node ID 0x22:
+18:34:56.749 ->         hopCount:   2
+18:34:56.749 ->         nextHop:    0x66
+18:34:56.749 ->         maxLinkRssi:  -44
+18:34:56.749 ->         Attempted Payload Transmissions:                   24
+18:34:56.749 ->         Total Payloads Received from this Node:            20
+
+18:35:00.763 ->     Received payload from Node ID 0x22:
+18:35:00.763 ->         hopCount:   2
+18:35:00.763 ->         nextHop:    0x66
+18:35:00.763 ->         maxLinkRssi:  -44
+18:35:00.763 ->         Attempted Payload Transmissions:                   25
+18:35:00.763 ->         Total Payloads Received from this Node:            21
+
+18:35:11.253 ->     Received payload from Node ID 0x66:
+18:35:11.253 ->         hopCount:   1
+18:35:11.253 ->         nextHop:    0xAA
+18:35:11.253 ->         maxLinkRssi:  -53
+18:35:11.253 ->         Attempted Payload Transmissions:                   26
+18:35:11.253 ->         Total Payloads Received from this Node:            10
+
+18:36:12.463 ->     Received payload from Node ID 0x55:
+18:36:12.463 ->         hopCount:   1
+18:36:12.463 ->         nextHop:    0xAA
+18:36:12.463 ->         maxLinkRssi:  -49
+18:36:12.463 ->         Attempted Payload Transmissions:                   19
+18:36:12.463 ->         Total Payloads Received from this Node:            13
+
+18:36:39.801 ->     Received payload from Node ID 0x33:
+18:36:39.801 ->         hopCount:   2
+18:36:39.801 ->         nextHop:    0x66
+18:36:39.801 ->         maxLinkRssi:  -44
+18:36:39.801 ->         Attempted Payload Transmissions:                   20
+18:36:39.801 ->         Total Payloads Received from this Node:            23
+
+18:37:00.853 ->     Received payload from Node ID 0x22:
+18:37:00.853 ->         hopCount:   2
+18:37:00.853 ->         nextHop:    0x66
+18:37:00.853 ->         maxLinkRssi:  -43
+18:37:00.853 ->         Attempted Payload Transmissions:                   22
+18:37:00.853 ->         Total Payloads Received from this Node:            22
+
+18:37:11.339 ->     Received payload from Node ID 0x66:
+18:37:11.339 ->         hopCount:   2
+18:37:11.339 ->         nextHop:    0x55
+18:37:11.339 ->         maxLinkRssi:  -11
+18:37:11.339 ->         Attempted Payload Transmissions:                   23
+18:37:11.339 ->         Total Payloads Received from this Node:            11
+
+18:39:44.711 ->     Received payload from Node ID 0x77:
+18:39:44.711 ->         hopCount:   1
+18:39:44.711 ->         nextHop:    0xAA
+18:39:44.711 ->         maxLinkRssi:  -58
+18:39:44.711 ->         Attempted Payload Transmissions:                   28
+18:39:44.711 ->         Total Payloads Received from this Node:            9
+
+18:40:12.588 ->     Received payload from Node ID 0x55:
+18:40:12.588 ->         hopCount:   3
+18:40:12.588 ->         nextHop:    0x44
+18:40:12.588 ->         maxLinkRssi:  -10
+18:40:12.588 ->         Attempted Payload Transmissions:                   39
+18:40:12.588 ->         Total Payloads Received from this Node:            14
+
+18:41:44.725 ->     Received payload from Node ID 0x77:
+18:41:44.725 ->         hopCount:   1
+18:41:44.725 ->         nextHop:    0xAA
+18:41:44.725 ->         maxLinkRssi:  -54
+18:41:44.725 ->         Attempted Payload Transmissions:                   29
+18:41:44.725 ->         Total Payloads Received from this Node:            10
+
+18:43:30.564 ->     Received payload from Node ID 0x11:
+18:43:30.564 ->         hopCount:   1
+18:43:30.564 ->         nextHop:    0xAA
+18:43:30.564 ->         maxLinkRssi:  -33
+18:43:30.564 ->         Attempted Payload Transmissions:                   59
+18:43:30.564 ->         Total Payloads Received from this Node:            21
+
+18:43:44.707 ->     Received payload from Node ID 0x77:
+18:43:44.707 ->         hopCount:   1
+18:43:44.707 ->         nextHop:    0xAA
+18:43:44.707 ->         maxLinkRssi:  -49
+18:43:44.707 ->         Attempted Payload Transmissions:                   30
+18:43:44.707 ->         Total Payloads Received from this Node:            11
+
+18:45:30.568 ->     Received payload from Node ID 0x11:
+18:45:30.568 ->         hopCount:   1
+18:45:30.568 ->         nextHop:    0xAA
+18:45:30.568 ->         maxLinkRssi:  -33
+18:45:30.568 ->         Attempted Payload Transmissions:                   60
+18:45:30.568 ->         Total Payloads Received from this Node:            22
