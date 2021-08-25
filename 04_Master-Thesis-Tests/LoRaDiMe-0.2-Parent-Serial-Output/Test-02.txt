@@ -1,0 +1,1003 @@
+A LDM Frame was processed.
+14:05:58.105 -> A LDM Frame was processed.
+14:06:58.127 -> A LDM Frame was processed.
+14:07:58.098 -> A LDM Frame was processed.
+14:08:16.739 -> ldm_checkFrameHeader: something happened...
+14:08:16.739 -> ldm_checkFrameHeader: valid LDM Header values
+14:08:58.109 -> A LDM Frame was processed.
+14:09:04.214 -> ldm_checkFrameHeader: something happened...
+14:09:04.214 -> ldm_checkFrameHeader: valid LDM Header values
+14:09:16.692 -> ldm_checkFrameHeader: something happened...
+14:09:16.692 -> ldm_checkFrameHeader: valid LDM Header values
+14:09:16.725 -> A payload was parsed.
+14:09:16.725 ->     Received payload from Node ID 0x22:
+14:09:16.725 ->         hopCount:   1
+14:09:16.725 ->         nextHop:    0xAA
+14:09:16.725 ->         maxLinkRssi:  -71
+14:09:16.725 ->         Attempted Payload Transmissions:                   1
+14:09:16.725 ->         Total Payloads Received from this Node:            1
+14:09:16.901 -> ldm_checkFrameHeader: something happened...
+14:09:16.901 -> ldm_checkFrameHeader: valid LDM Header values
+14:09:58.135 -> A LDM Frame was processed.
+14:10:04.194 -> ldm_checkFrameHeader: something happened...
+14:10:04.194 -> ldm_checkFrameHeader: valid LDM Header values
+14:10:04.194 -> A payload was parsed.
+14:10:04.194 ->     Received payload from Node ID 0x11:
+14:10:04.194 ->         hopCount:   1
+14:10:04.194 ->         nextHop:    0xAA
+14:10:04.194 ->         maxLinkRssi:  -87
+14:10:04.194 ->         Attempted Payload Transmissions:                   1
+14:10:04.194 ->         Total Payloads Received from this Node:            1
+14:10:04.367 -> ldm_checkFrameHeader: something happened...
+14:10:04.367 -> ldm_checkFrameHeader: valid LDM Header values
+14:10:16.904 -> ldm_checkFrameHeader: something happened...
+14:10:16.904 -> ldm_checkFrameHeader: valid LDM Header values
+14:10:38.933 -> ldm_checkFrameHeader: something happened...
+14:10:38.933 -> ldm_checkFrameHeader: valid LDM Header values
+14:10:58.113 -> A LDM Frame was processed.
+14:11:04.369 -> ldm_checkFrameHeader: something happened...
+14:11:04.369 -> ldm_checkFrameHeader: valid LDM Header values
+14:11:16.677 -> ldm_checkFrameHeader: something happened...
+14:11:16.677 -> ldm_checkFrameHeader: valid LDM Header values
+14:11:16.710 -> A payload was parsed.
+14:11:16.710 ->     Received payload from Node ID 0x22:
+14:11:16.710 ->         hopCount:   1
+14:11:16.710 ->         nextHop:    0xAA
+14:11:16.710 ->         maxLinkRssi:  -71
+14:11:16.710 ->         Attempted Payload Transmissions:                   2
+14:11:16.710 ->         Total Payloads Received from this Node:            2
+14:11:38.898 -> ldm_checkFrameHeader: something happened...
+14:11:38.898 -> ldm_checkFrameHeader: valid LDM Header values
+14:11:38.932 -> A payload was parsed.
+14:11:38.932 ->     Received payload from Node ID 0x33:
+14:11:38.932 ->         hopCount:   1
+14:11:38.932 ->         nextHop:    0xAA
+14:11:38.932 ->         maxLinkRssi:  -98
+14:11:38.932 ->         Attempted Payload Transmissions:                   1
+14:11:38.932 ->         Total Payloads Received from this Node:            1
+14:11:39.074 -> ldm_checkFrameHeader: something happened...
+14:11:39.074 -> ldm_checkFrameHeader: valid LDM Header values
+14:11:58.118 -> A LDM Frame was processed.
+14:12:04.212 -> ldm_checkFrameHeader: something happened...
+14:12:04.212 -> ldm_checkFrameHeader: valid LDM Header values
+14:12:04.212 -> A payload was parsed.
+14:12:04.212 ->     Received payload from Node ID 0x11:
+14:12:04.212 ->         hopCount:   1
+14:12:04.212 ->         nextHop:    0xAA
+14:12:04.212 ->         maxLinkRssi:  -87
+14:12:04.212 ->         Attempted Payload Transmissions:                   2
+14:12:04.212 ->         Total Payloads Received from this Node:            2
+14:12:04.389 -> ldm_checkFrameHeader: something happened...
+14:12:04.389 -> ldm_checkFrameHeader: valid LDM Header values
+14:12:16.908 -> ldm_checkFrameHeader: something happened...
+14:12:16.908 -> ldm_checkFrameHeader: valid LDM Header values
+14:12:39.104 -> ldm_checkFrameHeader: something happened...
+14:12:39.104 -> ldm_checkFrameHeader: valid LDM Header values
+14:12:58.126 -> A LDM Frame was processed.
+14:13:11.376 -> ldm_checkFrameHeader: something happened...
+14:13:11.376 -> ldm_checkFrameHeader: valid LDM Header values
+14:13:11.410 -> A payload was parsed.
+14:13:11.410 ->     Received payload from Node ID 0x44:
+14:13:11.410 ->         hopCount:   2
+14:13:11.410 ->         nextHop:    0x11
+14:13:11.410 ->         maxLinkRssi:  -108
+14:13:11.410 ->         Attempted Payload Transmissions:                   3
+14:13:11.410 ->         Total Payloads Received from this Node:            1
+14:13:11.467 -> ldm_checkFrameHeader: something happened...
+14:13:11.467 -> ldm_checkFrameHeader: valid LDM Header values
+14:13:16.677 -> ldm_checkFrameHeader: something happened...
+14:13:16.677 -> ldm_checkFrameHeader: valid LDM Header values
+14:13:16.713 -> A payload was parsed.
+14:13:16.713 ->     Received payload from Node ID 0x22:
+14:13:16.713 ->         hopCount:   1
+14:13:16.713 ->         nextHop:    0xAA
+14:13:16.713 ->         maxLinkRssi:  -71
+14:13:16.713 ->         Attempted Payload Transmissions:                   3
+14:13:16.713 ->         Total Payloads Received from this Node:            3
+14:13:16.866 -> ldm_checkFrameHeader: something happened...
+14:13:16.866 -> ldm_checkFrameHeader: valid LDM Header values
+14:13:40.913 -> ldm_checkFrameHeader: something happened...
+14:13:40.913 -> ldm_checkFrameHeader: valid LDM Header values
+14:13:40.913 -> A payload was parsed.
+14:13:40.913 ->     Received payload from Node ID 0x33:
+14:13:40.913 ->         hopCount:   1
+14:13:40.913 ->         nextHop:    0xAA
+14:13:40.913 ->         maxLinkRssi:  -98
+14:13:40.913 ->         Attempted Payload Transmissions:                   3
+14:13:40.913 ->         Total Payloads Received from this Node:            2
+14:13:41.065 -> ldm_checkFrameHeader: something happened...
+14:13:41.065 -> ldm_checkFrameHeader: valid LDM Header values
+14:13:58.137 -> A LDM Frame was processed.
+14:14:04.206 -> ldm_checkFrameHeader: something happened...
+14:14:04.206 -> ldm_checkFrameHeader: valid LDM Header values
+14:14:04.247 -> A payload was parsed.
+14:14:04.247 ->     Received payload from Node ID 0x11:
+14:14:04.247 ->         hopCount:   1
+14:14:04.247 ->         nextHop:    0xAA
+14:14:04.247 ->         maxLinkRssi:  -87
+14:14:04.247 ->         Attempted Payload Transmissions:                   4
+14:14:04.247 ->         Total Payloads Received from this Node:            3
+14:14:04.405 -> ldm_checkFrameHeader: something happened...
+14:14:04.405 -> ldm_checkFrameHeader: valid LDM Header values
+14:14:16.881 -> ldm_checkFrameHeader: something happened...
+14:14:16.881 -> ldm_checkFrameHeader: valid LDM Header values
+14:14:41.073 -> ldm_checkFrameHeader: something happened...
+14:14:41.073 -> ldm_checkFrameHeader: valid LDM Header values
+14:14:42.715 -> ldm_checkFrameHeader: something happened...
+14:14:42.715 -> ldm_checkFrameHeader: valid LDM Header values
+14:14:58.095 -> A LDM Frame was processed.
+14:15:04.384 -> ldm_checkFrameHeader: something happened...
+14:15:04.384 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:11.370 -> ldm_checkFrameHeader: something happened...
+14:15:11.370 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:11.405 -> A payload was parsed.
+14:15:11.405 ->     Received payload from Node ID 0x44:
+14:15:11.405 ->         hopCount:   2
+14:15:11.405 ->         nextHop:    0x11
+14:15:11.405 ->         maxLinkRssi:  -108
+14:15:11.405 ->         Attempted Payload Transmissions:                   5
+14:15:11.405 ->         Total Payloads Received from this Node:            2
+14:15:11.465 -> ldm_checkFrameHeader: something happened...
+14:15:11.465 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:16.711 -> ldm_checkFrameHeader: something happened...
+14:15:16.711 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:16.711 -> A payload was parsed.
+14:15:16.711 ->     Received payload from Node ID 0x22:
+14:15:16.711 ->         hopCount:   1
+14:15:16.711 ->         nextHop:    0xAA
+14:15:16.711 ->         maxLinkRssi:  -71
+14:15:16.711 ->         Attempted Payload Transmissions:                   4
+14:15:16.711 ->         Total Payloads Received from this Node:            4
+14:15:16.895 -> ldm_checkFrameHeader: something happened...
+14:15:16.895 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:17.313 -> ldm_checkFrameHeader: something happened...
+14:15:17.313 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:33.347 -> ldm_checkFrameHeader: something happened...
+14:15:33.347 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:38.873 -> ldm_checkFrameHeader: something happened...
+14:15:38.873 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:38.945 -> A payload was parsed.
+14:15:38.945 ->     Received payload from Node ID 0x33:
+14:15:38.945 ->         hopCount:   1
+14:15:38.945 ->         nextHop:    0xAA
+14:15:38.945 ->         maxLinkRssi:  -98
+14:15:38.945 ->         Attempted Payload Transmissions:                   4
+14:15:38.945 ->         Total Payloads Received from this Node:            3
+14:15:41.085 -> ldm_checkFrameHeader: something happened...
+14:15:41.085 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:42.700 -> ldm_checkFrameHeader: something happened...
+14:15:42.700 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:42.700 -> A payload was parsed.
+14:15:42.700 ->     Received payload from Node ID 0x55:
+14:15:42.700 ->         hopCount:   1
+14:15:42.700 ->         nextHop:    0xAA
+14:15:42.700 ->         maxLinkRssi:  -114
+14:15:42.700 ->         Attempted Payload Transmissions:                   1
+14:15:42.700 ->         Total Payloads Received from this Node:            1
+14:15:42.880 -> ldm_checkFrameHeader: something happened...
+14:15:42.880 -> ldm_checkFrameHeader: valid LDM Header values
+14:15:58.109 -> A LDM Frame was processed.
+14:16:04.202 -> ldm_checkFrameHeader: something happened...
+14:16:04.202 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:04.202 -> A payload was parsed.
+14:16:04.202 ->     Received payload from Node ID 0x11:
+14:16:04.202 ->         hopCount:   1
+14:16:04.202 ->         nextHop:    0xAA
+14:16:04.202 ->         maxLinkRssi:  -87
+14:16:04.202 ->         Attempted Payload Transmissions:                   6
+14:16:04.202 ->         Total Payloads Received from this Node:            4
+14:16:04.410 -> ldm_checkFrameHeader: something happened...
+14:16:04.410 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:16.884 -> ldm_checkFrameHeader: something happened...
+14:16:16.884 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:17.269 -> ldm_checkFrameHeader: something happened...
+14:16:17.269 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:21.377 -> ldm_checkFrameHeader: something happened...
+14:16:21.377 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:21.377 -> A payload was parsed.
+14:16:21.377 ->     Received payload from Node ID 0x66:
+14:16:21.377 ->         hopCount:   2
+14:16:21.377 ->         nextHop:    0x55
+14:16:21.377 ->         maxLinkRssi:  -100
+14:16:21.377 ->         Attempted Payload Transmissions:                   3
+14:16:21.377 ->         Total Payloads Received from this Node:            1
+14:16:21.478 -> ldm_checkFrameHeader: something happened...
+14:16:21.478 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:33.328 -> ldm_checkFrameHeader: something happened...
+14:16:33.328 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:37.441 -> ldm_checkFrameHeader: something happened...
+14:16:37.441 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:37.441 -> A payload was parsed.
+14:16:37.441 ->     Received payload from Node ID 0x77:
+14:16:37.441 ->         hopCount:   2
+14:16:37.441 ->         nextHop:    0x55
+14:16:37.441 ->         maxLinkRssi:  -102
+14:16:37.441 ->         Attempted Payload Transmissions:                   4
+14:16:37.441 ->         Total Payloads Received from this Node:            1
+14:16:37.511 -> ldm_checkFrameHeader: something happened...
+14:16:37.511 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:41.051 -> ldm_checkFrameHeader: something happened...
+14:16:41.051 -> ldm_checkFrameHeader: valid LDM Header values
+14:16:58.105 -> A LDM Frame was processed.
+14:17:58.104 -> A LDM Frame was processed.
+14:18:04.200 -> ldm_checkFrameHeader: something happened...
+14:18:04.200 -> ldm_checkFrameHeader: valid LDM Header values
+14:18:08.183 -> ldm_checkFrameHeader: something happened...
+14:18:08.183 -> ldm_checkFrameHeader: valid LDM Header values
+14:18:12.177 -> ldm_checkFrameHeader: something happened...
+14:18:12.177 -> ldm_checkFrameHeader: valid LDM Header values
+14:18:16.277 -> ldm_checkFrameHeader: something happened...
+14:18:16.277 -> ldm_checkFrameHeader: valid LDM Header values
+14:18:23.731 -> ldm_checkFrameHeader: something happened...
+14:18:23.731 -> ldm_checkFrameHeader: valid LDM Header values
+14:18:45.002 -> ldm_checkFrameHeader: something happened...
+14:18:45.002 -> ldm_checkFrameHeader: valid LDM Header values
+14:18:48.790 -> ldm_checkFrameHeader: something happened...
+14:18:48.790 -> ldm_checkFrameHeader: valid LDM Header values
+14:18:58.108 -> A LDM Frame was processed.
+14:19:11.400 -> ldm_checkFrameHeader: something happened...
+14:19:11.400 -> ldm_checkFrameHeader: valid LDM Header values
+14:19:11.400 -> A payload was parsed.
+14:19:11.400 ->     Received payload from Node ID 0x44:
+14:19:11.400 ->         hopCount:   2
+14:19:11.400 ->         nextHop:    0x11
+14:19:11.400 ->         maxLinkRssi:  -108
+14:19:11.400 ->         Attempted Payload Transmissions:                   12
+14:19:11.400 ->         Total Payloads Received from this Node:            3
+14:19:11.469 -> ldm_checkFrameHeader: something happened...
+14:19:11.469 -> ldm_checkFrameHeader: valid LDM Header values
+14:19:16.237 -> ldm_checkFrameHeader: something happened...
+14:19:16.237 -> ldm_checkFrameHeader: valid LDM Header values
+14:19:17.474 -> ldm_checkFrameHeader: something happened...
+14:19:17.474 -> ldm_checkFrameHeader: valid LDM Header values
+14:19:17.474 -> A payload was parsed.
+14:19:17.474 ->     Received payload from Node ID 0x22:
+14:19:17.474 ->         hopCount:   1
+14:19:17.474 ->         nextHop:    0xAA
+14:19:17.474 ->         maxLinkRssi:  -71
+14:19:17.474 ->         Attempted Payload Transmissions:                   10
+14:19:17.474 ->         Total Payloads Received from this Node:            5
+14:19:23.730 -> ldm_checkFrameHeader: something happened...
+14:19:23.730 -> ldm_checkFrameHeader: valid LDM Header values
+14:19:38.893 -> ldm_checkFrameHeader: something happened...
+14:19:38.893 -> ldm_checkFrameHeader: valid LDM Header values
+14:19:38.893 -> A payload was parsed.
+14:19:38.893 ->     Received payload from Node ID 0x33:
+14:19:38.893 ->         hopCount:   1
+14:19:38.893 ->         nextHop:    0xAA
+14:19:38.893 ->         maxLinkRssi:  -99
+14:19:38.893 ->         Attempted Payload Transmissions:                   8
+14:19:38.893 ->         Total Payloads Received from this Node:            4
+14:19:42.725 -> ldm_checkFrameHeader: something happened...
+14:19:42.725 -> ldm_checkFrameHeader: valid LDM Header values
+14:19:42.725 -> A payload was parsed.
+14:19:42.725 ->     Received payload from Node ID 0x55:
+14:19:42.725 ->         hopCount:   1
+14:19:42.725 ->         nextHop:    0xAA
+14:19:42.725 ->         maxLinkRssi:  -114
+14:19:42.725 ->         Attempted Payload Transmissions:                   9
+14:19:42.725 ->         Total Payloads Received from this Node:            2
+14:19:44.992 -> ldm_checkFrameHeader: something happened...
+14:19:44.992 -> ldm_checkFrameHeader: valid LDM Header values
+14:19:48.773 -> ldm_checkFrameHeader: something happened...
+14:19:48.773 -> ldm_checkFrameHeader: valid LDM Header values
+14:19:58.108 -> A LDM Frame was processed.
+14:20:04.213 -> ldm_checkFrameHeader: something happened...
+14:20:04.213 -> ldm_checkFrameHeader: valid LDM Header values
+14:20:04.213 -> A payload was parsed.
+14:20:04.213 ->     Received payload from Node ID 0x11:
+14:20:04.213 ->         hopCount:   1
+14:20:04.213 ->         nextHop:    0xAA
+14:20:04.213 ->         maxLinkRssi:  -88
+14:20:04.213 ->         Attempted Payload Transmissions:                   13
+14:20:04.213 ->         Total Payloads Received from this Node:            5
+14:20:16.265 -> ldm_checkFrameHeader: something happened...
+14:20:16.265 -> ldm_checkFrameHeader: valid LDM Header values
+14:20:17.495 -> ldm_checkFrameHeader: something happened...
+14:20:17.495 -> ldm_checkFrameHeader: valid LDM Header values
+14:20:17.495 -> A payload was parsed.
+14:20:17.495 ->     Received payload from Node ID 0x66:
+14:20:17.495 ->         hopCount:   3
+14:20:17.495 ->         nextHop:    0x44
+14:20:17.495 ->         maxLinkRssi:  -87
+14:20:17.495 ->         Attempted Payload Transmissions:                   14
+14:20:17.495 ->         Total Payloads Received from this Node:            2
+14:20:17.564 -> ldm_checkFrameHeader: something happened...
+14:20:17.564 -> ldm_checkFrameHeader: valid LDM Header values
+14:20:23.746 -> ldm_checkFrameHeader: something happened...
+14:20:23.746 -> ldm_checkFrameHeader: valid LDM Header values
+14:20:33.473 -> ldm_checkFrameHeader: something happened...
+14:20:33.473 -> ldm_checkFrameHeader: valid LDM Header values
+14:20:33.507 -> A payload was parsed.
+14:20:33.507 ->     Received payload from Node ID 0x77:
+14:20:33.507 ->         hopCount:   3
+14:20:33.507 ->         nextHop:    0x44
+14:20:33.507 ->         maxLinkRssi:  -90
+14:20:33.507 ->         Attempted Payload Transmissions:                   15
+14:20:33.507 ->         Total Payloads Received from this Node:            2
+14:20:33.576 -> ldm_checkFrameHeader: something happened...
+14:20:33.576 -> ldm_checkFrameHeader: valid LDM Header values
+14:20:44.980 -> ldm_checkFrameHeader: something happened...
+14:20:44.980 -> ldm_checkFrameHeader: valid LDM Header values
+14:20:48.774 -> ldm_checkFrameHeader: something happened...
+14:20:48.774 -> ldm_checkFrameHeader: valid LDM Header values
+14:20:58.113 -> A LDM Frame was processed.
+14:21:11.371 -> ldm_checkFrameHeader: something happened...
+14:21:11.371 -> ldm_checkFrameHeader: valid LDM Header values
+14:21:11.371 -> A payload was parsed.
+14:21:11.371 ->     Received payload from Node ID 0x44:
+14:21:11.371 ->         hopCount:   2
+14:21:11.371 ->         nextHop:    0x11
+14:21:11.371 ->         maxLinkRssi:  -108
+14:21:11.371 ->         Attempted Payload Transmissions:                   16
+14:21:11.371 ->         Total Payloads Received from this Node:            4
+14:21:11.451 -> ldm_checkFrameHeader: something happened...
+14:21:11.451 -> ldm_checkFrameHeader: valid LDM Header values
+14:21:16.253 -> ldm_checkFrameHeader: something happened...
+14:21:16.253 -> ldm_checkFrameHeader: valid LDM Header values
+14:21:17.483 -> ldm_checkFrameHeader: something happened...
+14:21:17.483 -> ldm_checkFrameHeader: valid LDM Header values
+14:21:17.483 -> A payload was parsed.
+14:21:17.483 ->     Received payload from Node ID 0x22:
+14:21:17.483 ->         hopCount:   1
+14:21:17.483 ->         nextHop:    0xAA
+14:21:17.483 ->         maxLinkRssi:  -71
+14:21:17.483 ->         Attempted Payload Transmissions:                   11
+14:21:17.483 ->         Total Payloads Received from this Node:            6
+14:21:23.736 -> ldm_checkFrameHeader: something happened...
+14:21:23.736 -> ldm_checkFrameHeader: valid LDM Header values
+14:21:38.870 -> ldm_checkFrameHeader: something happened...
+14:21:38.870 -> ldm_checkFrameHeader: valid LDM Header values
+14:21:38.904 -> A payload was parsed.
+14:21:38.904 ->     Received payload from Node ID 0x33:
+14:21:38.904 ->         hopCount:   1
+14:21:38.904 ->         nextHop:    0xAA
+14:21:38.904 ->         maxLinkRssi:  -99
+14:21:38.904 ->         Attempted Payload Transmissions:                   9
+14:21:38.904 ->         Total Payloads Received from this Node:            5
+14:21:42.695 -> ldm_checkFrameHeader: something happened...
+14:21:42.695 -> ldm_checkFrameHeader: valid LDM Header values
+14:21:42.695 -> A payload was parsed.
+14:21:42.695 ->     Received payload from Node ID 0x55:
+14:21:42.695 ->         hopCount:   1
+14:21:42.695 ->         nextHop:    0xAA
+14:21:42.695 ->         maxLinkRssi:  -114
+14:21:42.695 ->         Attempted Payload Transmissions:                   10
+14:21:42.695 ->         Total Payloads Received from this Node:            3
+14:21:45.002 -> ldm_checkFrameHeader: something happened...
+14:21:45.002 -> ldm_checkFrameHeader: valid LDM Header values
+14:21:48.781 -> ldm_checkFrameHeader: something happened...
+14:21:48.781 -> ldm_checkFrameHeader: valid LDM Header values
+14:21:58.104 -> A LDM Frame was processed.
+14:22:04.163 -> ldm_checkFrameHeader: something happened...
+14:22:04.163 -> ldm_checkFrameHeader: valid LDM Header values
+14:22:04.197 -> A payload was parsed.
+14:22:04.197 ->     Received payload from Node ID 0x11:
+14:22:04.197 ->         hopCount:   1
+14:22:04.197 ->         nextHop:    0xAA
+14:22:04.197 ->         maxLinkRssi:  -88
+14:22:04.197 ->         Attempted Payload Transmissions:                   17
+14:22:04.197 ->         Total Payloads Received from this Node:            6
+14:22:16.266 -> ldm_checkFrameHeader: something happened...
+14:22:16.266 -> ldm_checkFrameHeader: valid LDM Header values
+14:22:17.486 -> ldm_checkFrameHeader: something happened...
+14:22:17.486 -> ldm_checkFrameHeader: valid LDM Header values
+14:22:17.486 -> A payload was parsed.
+14:22:17.486 ->     Received payload from Node ID 0x66:
+14:22:17.486 ->         hopCount:   3
+14:22:17.486 ->         nextHop:    0x44
+14:22:17.486 ->         maxLinkRssi:  -88
+14:22:17.486 ->         Attempted Payload Transmissions:                   18
+14:22:17.486 ->         Total Payloads Received from this Node:            3
+14:22:17.525 -> ldm_checkFrameHeader: something happened...
+14:22:17.525 -> ldm_checkFrameHeader: valid LDM Header values
+14:22:23.750 -> ldm_checkFrameHeader: something happened...
+14:22:23.750 -> ldm_checkFrameHeader: valid LDM Header values
+14:22:33.514 -> ldm_checkFrameHeader: something happened...
+14:22:33.514 -> ldm_checkFrameHeader: valid LDM Header values
+14:22:33.514 -> A payload was parsed.
+14:22:33.514 ->     Received payload from Node ID 0x77:
+14:22:33.514 ->         hopCount:   3
+14:22:33.514 ->         nextHop:    0x44
+14:22:33.514 ->         maxLinkRssi:  -91
+14:22:33.514 ->         Attempted Payload Transmissions:                   19
+14:22:33.514 ->         Total Payloads Received from this Node:            3
+14:22:33.584 -> ldm_checkFrameHeader: something happened...
+14:22:33.584 -> ldm_checkFrameHeader: valid LDM Header values
+14:22:44.963 -> ldm_checkFrameHeader: something happened...
+14:22:44.963 -> ldm_checkFrameHeader: valid LDM Header values
+14:22:48.779 -> ldm_checkFrameHeader: something happened...
+14:22:48.779 -> ldm_checkFrameHeader: valid LDM Header values
+14:22:58.117 -> A LDM Frame was processed.
+14:23:11.378 -> ldm_checkFrameHeader: something happened...
+14:23:11.378 -> ldm_checkFrameHeader: valid LDM Header values
+14:23:11.378 -> A payload was parsed.
+14:23:11.378 ->     Received payload from Node ID 0x44:
+14:23:11.378 ->         hopCount:   2
+14:23:11.378 ->         nextHop:    0x11
+14:23:11.378 ->         maxLinkRssi:  -108
+14:23:11.378 ->         Attempted Payload Transmissions:                   20
+14:23:11.378 ->         Total Payloads Received from this Node:            5
+14:23:11.453 -> ldm_checkFrameHeader: something happened...
+14:23:11.453 -> ldm_checkFrameHeader: valid LDM Header values
+14:23:16.254 -> ldm_checkFrameHeader: something happened...
+14:23:16.254 -> ldm_checkFrameHeader: valid LDM Header values
+14:23:17.500 -> ldm_checkFrameHeader: something happened...
+14:23:17.500 -> ldm_checkFrameHeader: valid LDM Header values
+14:23:17.500 -> A payload was parsed.
+14:23:17.500 ->     Received payload from Node ID 0x22:
+14:23:17.500 ->         hopCount:   1
+14:23:17.500 ->         nextHop:    0xAA
+14:23:17.500 ->         maxLinkRssi:  -71
+14:23:17.500 ->         Attempted Payload Transmissions:                   12
+14:23:17.500 ->         Total Payloads Received from this Node:            7
+14:23:23.754 -> ldm_checkFrameHeader: something happened...
+14:23:23.754 -> ldm_checkFrameHeader: valid LDM Header values
+14:23:38.894 -> ldm_checkFrameHeader: something happened...
+14:23:38.894 -> ldm_checkFrameHeader: valid LDM Header values
+14:23:38.894 -> A payload was parsed.
+14:23:38.894 ->     Received payload from Node ID 0x33:
+14:23:38.894 ->         hopCount:   1
+14:23:38.894 ->         nextHop:    0xAA
+14:23:38.894 ->         maxLinkRssi:  -99
+14:23:38.894 ->         Attempted Payload Transmissions:                   10
+14:23:38.894 ->         Total Payloads Received from this Node:            6
+14:23:58.126 -> A LDM Frame was processed.
+14:24:04.196 -> ldm_checkFrameHeader: something happened...
+14:24:04.196 -> ldm_checkFrameHeader: valid LDM Header values
+14:24:04.196 -> A payload was parsed.
+14:24:04.196 ->     Received payload from Node ID 0x11:
+14:24:04.196 ->         hopCount:   1
+14:24:04.196 ->         nextHop:    0xAA
+14:24:04.196 ->         maxLinkRssi:  -88
+14:24:04.196 ->         Attempted Payload Transmissions:                   21
+14:24:04.196 ->         Total Payloads Received from this Node:            7
+14:24:16.246 -> ldm_checkFrameHeader: something happened...
+14:24:16.246 -> ldm_checkFrameHeader: valid LDM Header values
+14:24:17.438 -> ldm_checkFrameHeader: something happened...
+14:24:17.438 -> ldm_checkFrameHeader: valid LDM Header values
+14:24:17.478 -> A payload was parsed.
+14:24:17.478 ->     Received payload from Node ID 0x66:
+14:24:17.478 ->         hopCount:   3
+14:24:17.478 ->         nextHop:    0x44
+14:24:17.478 ->         maxLinkRssi:  -88
+14:24:17.478 ->         Attempted Payload Transmissions:                   22
+14:24:17.478 ->         Total Payloads Received from this Node:            4
+14:24:17.563 -> ldm_checkFrameHeader: something happened...
+14:24:17.563 -> ldm_checkFrameHeader: valid LDM Header values
+14:24:23.757 -> ldm_checkFrameHeader: something happened...
+14:24:23.757 -> ldm_checkFrameHeader: valid LDM Header values
+14:24:33.488 -> ldm_checkFrameHeader: something happened...
+14:24:33.488 -> ldm_checkFrameHeader: valid LDM Header values
+14:24:33.526 -> A payload was parsed.
+14:24:33.526 ->     Received payload from Node ID 0x77:
+14:24:33.526 ->         hopCount:   3
+14:24:33.526 ->         nextHop:    0x44
+14:24:33.526 ->         maxLinkRssi:  -92
+14:24:33.526 ->         Attempted Payload Transmissions:                   23
+14:24:33.526 ->         Total Payloads Received from this Node:            4
+14:24:33.602 -> ldm_checkFrameHeader: something happened...
+14:24:33.602 -> ldm_checkFrameHeader: valid LDM Header values
+14:24:44.966 -> ldm_checkFrameHeader: something happened...
+14:24:44.966 -> ldm_checkFrameHeader: valid LDM Header values
+14:24:48.782 -> ldm_checkFrameHeader: something happened...
+14:24:48.782 -> ldm_checkFrameHeader: valid LDM Header values
+14:24:58.117 -> A LDM Frame was processed.
+14:25:11.400 -> ldm_checkFrameHeader: something happened...
+14:25:11.400 -> ldm_checkFrameHeader: valid LDM Header values
+14:25:11.400 -> A payload was parsed.
+14:25:11.400 ->     Received payload from Node ID 0x44:
+14:25:11.400 ->         hopCount:   2
+14:25:11.400 ->         nextHop:    0x11
+14:25:11.400 ->         maxLinkRssi:  -108
+14:25:11.400 ->         Attempted Payload Transmissions:                   24
+14:25:11.400 ->         Total Payloads Received from this Node:            6
+14:25:11.474 -> ldm_checkFrameHeader: something happened...
+14:25:11.474 -> ldm_checkFrameHeader: valid LDM Header values
+14:25:16.272 -> ldm_checkFrameHeader: something happened...
+14:25:16.272 -> ldm_checkFrameHeader: valid LDM Header values
+14:25:17.500 -> ldm_checkFrameHeader: something happened...
+14:25:17.500 -> ldm_checkFrameHeader: valid LDM Header values
+14:25:17.500 -> A payload was parsed.
+14:25:17.500 ->     Received payload from Node ID 0x22:
+14:25:17.500 ->         hopCount:   1
+14:25:17.500 ->         nextHop:    0xAA
+14:25:17.500 ->         maxLinkRssi:  -71
+14:25:17.500 ->         Attempted Payload Transmissions:                   13
+14:25:17.500 ->         Total Payloads Received from this Node:            8
+14:25:23.713 -> ldm_checkFrameHeader: something happened...
+14:25:23.713 -> ldm_checkFrameHeader: valid LDM Header values
+14:25:47.120 -> ldm_checkFrameHeader: something happened...
+14:25:47.120 -> ldm_checkFrameHeader: valid LDM Header values
+14:25:47.120 -> A payload was parsed.
+14:25:47.120 ->     Received payload from Node ID 0x33:
+14:25:47.120 ->         hopCount:   1
+14:25:47.120 ->         nextHop:    0xAA
+14:25:47.120 ->         maxLinkRssi:  -99
+14:25:47.120 ->         Attempted Payload Transmissions:                   11
+14:25:47.120 ->         Total Payloads Received from this Node:            7
+14:25:47.120 -> ldm_checkFrameHeader: something happened...
+14:25:47.120 -> ldm_checkFrameHeader: valid LDM Header values
+14:25:47.120 -> A payload was parsed.
+14:25:47.120 ->     Received payload from Node ID 0x55:
+14:25:47.120 ->         hopCount:   1
+14:25:47.120 ->         nextHop:    0xAA
+14:25:47.120 ->         maxLinkRssi:  -114
+14:25:47.120 ->         Attempted Payload Transmissions:                   15
+14:25:47.120 ->         Total Payloads Received from this Node:            4
+14:25:47.120 -> ldm_checkFrameHeader: something happened...
+14:25:47.120 -> ldm_checkFrameHeader: valid LDM Header values
+14:25:53.939 -> ldm_checkFrameHeader: something happened...
+14:25:53.939 -> ldm_checkFrameHeader: valid LDM Header values
+14:26:13.973 -> A LDM Frame was processed.
+14:26:13.973 -> ldm_checkFrameHeader: something happened...
+14:26:13.973 -> ldm_checkFrameHeader: valid LDM Header values
+14:26:13.973 -> A payload was parsed.
+14:26:13.973 ->     Received payload from Node ID 0x11:
+14:26:13.973 ->         hopCount:   1
+14:26:13.973 ->         nextHop:    0xAA
+14:26:13.973 ->         maxLinkRssi:  -88
+14:26:13.973 ->         Attempted Payload Transmissions:                   25
+14:26:13.973 ->         Total Payloads Received from this Node:            8
+14:26:18.949 -> ldm_checkFrameHeader: something happened...
+14:26:18.949 -> ldm_checkFrameHeader: valid LDM Header values
+14:26:18.949 -> ldm_checkFrameHeader: something happened...
+14:26:18.949 -> ldm_checkFrameHeader: valid LDM Header values
+14:26:18.949 -> A payload was parsed.
+14:26:18.949 ->     Received payload from Node ID 0x66:
+14:26:18.949 ->         hopCount:   3
+14:26:18.949 ->         nextHop:    0x44
+14:26:18.949 ->         maxLinkRssi:  -78
+14:26:18.949 ->         Attempted Payload Transmissions:                   26
+14:26:18.949 ->         Total Payloads Received from this Node:            5
+14:26:18.949 -> ldm_checkFrameHeader: something happened...
+14:26:18.949 -> ldm_checkFrameHeader: valid LDM Header values
+14:26:38.988 -> ldm_checkFrameHeader: something happened...
+14:26:38.988 -> ldm_checkFrameHeader: valid LDM Header values
+14:26:38.988 -> ldm_checkFrameHeader: something happened...
+14:26:38.988 -> ldm_checkFrameHeader: valid LDM Header values
+14:26:38.988 -> A payload was parsed.
+14:26:38.988 ->     Received payload from Node ID 0x77:
+14:26:38.988 ->         hopCount:   2
+14:26:38.988 ->         nextHop:    0x11
+14:26:38.988 ->         maxLinkRssi:  -113
+14:26:38.988 ->         Attempted Payload Transmissions:                   27
+14:26:38.988 ->         Total Payloads Received from this Node:            5
+14:26:38.988 -> ldm_checkFrameHeader: something happened...
+14:26:38.988 -> ldm_checkFrameHeader: valid LDM Header values
+14:26:56.188 -> ldm_checkFrameHeader: something happened...
+14:26:56.188 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:16.220 -> A LDM Frame was processed.
+14:27:16.220 -> ldm_checkFrameHeader: something happened...
+14:27:16.220 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:16.220 -> A payload was parsed.
+14:27:16.220 ->     Received payload from Node ID 0x44:
+14:27:16.220 ->         hopCount:   2
+14:27:16.220 ->         nextHop:    0x11
+14:27:16.220 ->         maxLinkRssi:  -108
+14:27:16.220 ->         Attempted Payload Transmissions:                   28
+14:27:16.220 ->         Total Payloads Received from this Node:            7
+14:27:16.220 -> ldm_checkFrameHeader: something happened...
+14:27:16.220 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:33.628 -> ldm_checkFrameHeader: something happened...
+14:27:33.628 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:33.628 -> ldm_checkFrameHeader: something happened...
+14:27:33.628 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:33.628 -> A payload was parsed.
+14:27:33.628 ->     Received payload from Node ID 0x22:
+14:27:33.628 ->         hopCount:   1
+14:27:33.628 ->         nextHop:    0xAA
+14:27:33.628 ->         maxLinkRssi:  -71
+14:27:33.628 ->         Attempted Payload Transmissions:                   14
+14:27:33.628 ->         Total Payloads Received from this Node:            9
+14:27:33.628 -> ldm_checkFrameHeader: something happened...
+14:27:33.628 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:53.658 -> ldm_checkFrameHeader: something happened...
+14:27:53.658 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:53.658 -> A payload was parsed.
+14:27:53.658 ->     Received payload from Node ID 0x33:
+14:27:53.658 ->         hopCount:   1
+14:27:53.658 ->         nextHop:    0xAA
+14:27:53.658 ->         maxLinkRssi:  -99
+14:27:53.658 ->         Attempted Payload Transmissions:                   12
+14:27:53.658 ->         Total Payloads Received from this Node:            8
+14:27:53.658 -> ldm_checkFrameHeader: something happened...
+14:27:53.658 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:53.658 -> A payload was parsed.
+14:27:53.658 ->     Received payload from Node ID 0x55:
+14:27:53.658 ->         hopCount:   1
+14:27:53.658 ->         nextHop:    0xAA
+14:27:53.658 ->         maxLinkRssi:  -114
+14:27:53.658 ->         Attempted Payload Transmissions:                   16
+14:27:53.658 ->         Total Payloads Received from this Node:            5
+14:27:53.658 -> ldm_checkFrameHeader: something happened...
+14:27:53.658 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:53.658 -> ldm_checkFrameHeader: something happened...
+14:27:53.658 -> ldm_checkFrameHeader: valid LDM Header values
+14:27:53.658 -> ldm_checkFrameHeader: something happened...
+14:27:53.658 -> ldm_checkFrameHeader: valid LDM Header values
+14:28:13.692 -> A LDM Frame was processed.
+14:28:13.692 -> ldm_checkFrameHeader: something happened...
+14:28:13.692 -> ldm_checkFrameHeader: valid LDM Header values
+14:28:13.692 -> A payload was parsed.
+14:28:13.692 ->     Received payload from Node ID 0x11:
+14:28:13.692 ->         hopCount:   1
+14:28:13.692 ->         nextHop:    0xAA
+14:28:13.692 ->         maxLinkRssi:  -88
+14:28:13.692 ->         Attempted Payload Transmissions:                   29
+14:28:13.692 ->         Total Payloads Received from this Node:            9
+14:28:18.416 -> ldm_checkFrameHeader: something happened...
+14:28:18.416 -> ldm_checkFrameHeader: valid LDM Header values
+14:28:18.416 -> ldm_checkFrameHeader: something happened...
+14:28:18.416 -> ldm_checkFrameHeader: valid LDM Header values
+14:28:18.416 -> ldm_checkFrameHeader: something happened...
+14:28:18.416 -> ldm_checkFrameHeader: valid LDM Header values
+14:28:18.416 -> A payload was parsed.
+14:28:18.416 ->     Received payload from Node ID 0x66:
+14:28:18.416 ->         hopCount:   2
+14:28:18.416 ->         nextHop:    0x22
+14:28:18.416 ->         maxLinkRssi:  -111
+14:28:18.416 ->         Attempted Payload Transmissions:                   15
+14:28:18.416 ->         Total Payloads Received from this Node:            6
+14:28:18.416 -> ldm_checkFrameHeader: something happened...
+14:28:18.416 -> ldm_checkFrameHeader: valid LDM Header values
+14:28:38.447 -> ldm_checkFrameHeader: something happened...
+14:28:38.447 -> ldm_checkFrameHeader: valid LDM Header values
+14:28:38.447 -> ldm_checkFrameHeader: something happened...
+14:28:38.447 -> ldm_checkFrameHeader: valid LDM Header values
+14:28:38.447 -> A payload was parsed.
+14:28:38.447 ->     Received payload from Node ID 0x77:
+14:28:38.447 ->         hopCount:   2
+14:28:38.447 ->         nextHop:    0x11
+14:28:38.447 ->         maxLinkRssi:  -112
+14:28:38.447 ->         Attempted Payload Transmissions:                   30
+14:28:38.447 ->         Total Payloads Received from this Node:            6
+14:28:38.447 -> ldm_checkFrameHeader: something happened...
+14:28:38.447 -> ldm_checkFrameHeader: valid LDM Header values
+14:28:46.701 -> ldm_checkFrameHeader: something happened...
+14:28:46.701 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:06.732 -> A LDM Frame was processed.
+14:29:13.422 -> ldm_checkFrameHeader: something happened...
+14:29:13.422 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:13.422 -> A payload was parsed.
+14:29:13.422 ->     Received payload from Node ID 0x44:
+14:29:13.422 ->         hopCount:   2
+14:29:13.422 ->         nextHop:    0x11
+14:29:13.422 ->         maxLinkRssi:  -108
+14:29:13.422 ->         Attempted Payload Transmissions:                   31
+14:29:13.422 ->         Total Payloads Received from this Node:            8
+14:29:13.422 -> ldm_checkFrameHeader: something happened...
+14:29:13.422 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:33.453 -> ldm_checkFrameHeader: something happened...
+14:29:33.453 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:33.453 -> ldm_checkFrameHeader: something happened...
+14:29:33.453 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:33.453 -> A payload was parsed.
+14:29:33.453 ->     Received payload from Node ID 0x22:
+14:29:33.453 ->         hopCount:   1
+14:29:33.453 ->         nextHop:    0xAA
+14:29:33.453 ->         maxLinkRssi:  -71
+14:29:33.453 ->         Attempted Payload Transmissions:                   16
+14:29:33.453 ->         Total Payloads Received from this Node:            10
+14:29:33.453 -> ldm_checkFrameHeader: something happened...
+14:29:33.453 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:58.458 -> ldm_checkFrameHeader: something happened...
+14:29:58.458 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:58.458 -> A payload was parsed.
+14:29:58.458 ->     Received payload from Node ID 0x33:
+14:29:58.458 ->         hopCount:   1
+14:29:58.458 ->         nextHop:    0xAA
+14:29:58.458 ->         maxLinkRssi:  -99
+14:29:58.458 ->         Attempted Payload Transmissions:                   13
+14:29:58.458 ->         Total Payloads Received from this Node:            9
+14:29:58.458 -> ldm_checkFrameHeader: something happened...
+14:29:58.458 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:58.458 -> A payload was parsed.
+14:29:58.458 ->     Received payload from Node ID 0x55:
+14:29:58.458 ->         hopCount:   1
+14:29:58.458 ->         nextHop:    0xAA
+14:29:58.458 ->         maxLinkRssi:  -114
+14:29:58.458 ->         Attempted Payload Transmissions:                   17
+14:29:58.458 ->         Total Payloads Received from this Node:            6
+14:29:58.458 -> ldm_checkFrameHeader: something happened...
+14:29:58.458 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:58.458 -> ldm_checkFrameHeader: something happened...
+14:29:58.458 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:58.458 -> ldm_checkFrameHeader: something happened...
+14:29:58.458 -> ldm_checkFrameHeader: valid LDM Header values
+14:29:58.458 -> A LDM Frame was processed.
+14:30:14.431 -> ldm_checkFrameHeader: something happened...
+14:30:14.431 -> ldm_checkFrameHeader: valid LDM Header values
+14:30:14.431 -> A payload was parsed.
+14:30:14.431 ->     Received payload from Node ID 0x11:
+14:30:14.431 ->         hopCount:   1
+14:30:14.431 ->         nextHop:    0xAA
+14:30:14.431 ->         maxLinkRssi:  -88
+14:30:14.431 ->         Attempted Payload Transmissions:                   32
+14:30:14.431 ->         Total Payloads Received from this Node:            10
+14:30:19.882 -> ldm_checkFrameHeader: something happened...
+14:30:19.882 -> ldm_checkFrameHeader: valid LDM Header values
+14:30:19.882 -> ldm_checkFrameHeader: something happened...
+14:30:19.882 -> ldm_checkFrameHeader: valid LDM Header values
+14:30:19.882 -> ldm_checkFrameHeader: something happened...
+14:30:19.882 -> ldm_checkFrameHeader: valid LDM Header values
+14:30:19.882 -> A payload was parsed.
+14:30:19.882 ->     Received payload from Node ID 0x66:
+14:30:19.882 ->         hopCount:   2
+14:30:19.882 ->         nextHop:    0x22
+14:30:19.882 ->         maxLinkRssi:  -110
+14:30:19.882 ->         Attempted Payload Transmissions:                   17
+14:30:19.882 ->         Total Payloads Received from this Node:            7
+14:30:19.882 -> ldm_checkFrameHeader: something happened...
+14:30:19.882 -> ldm_checkFrameHeader: valid LDM Header values
+14:30:39.912 -> ldm_checkFrameHeader: something happened...
+14:30:39.912 -> ldm_checkFrameHeader: valid LDM Header values
+14:30:39.912 -> ldm_checkFrameHeader: something happened...
+14:30:39.912 -> ldm_checkFrameHeader: valid LDM Header values
+14:30:39.912 -> ldm_checkFrameHeader: something happened...
+14:30:39.912 -> ldm_checkFrameHeader: valid LDM Header values
+14:30:39.912 -> ldm_checkFrameHeader: something happened...
+14:30:39.912 -> ldm_checkFrameHeader: valid LDM Header values
+14:30:39.912 -> A payload was parsed.
+14:30:39.912 ->     Received payload from Node ID 0x77:
+14:30:39.912 ->         hopCount:   2
+14:30:39.912 ->         nextHop:    0x11
+14:30:39.912 ->         maxLinkRssi:  -84
+14:30:39.912 ->         Attempted Payload Transmissions:                   33
+14:30:39.912 ->         Total Payloads Received from this Node:            7
+14:30:39.912 -> ldm_checkFrameHeader: something happened...
+14:30:39.912 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:04.916 -> ldm_checkFrameHeader: something happened...
+14:31:04.916 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:04.916 -> ldm_checkFrameHeader: something happened...
+14:31:04.916 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:04.916 -> A LDM Frame was processed.
+14:31:24.949 -> ldm_checkFrameHeader: something happened...
+14:31:24.949 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:24.949 -> A payload was parsed.
+14:31:24.949 ->     Received payload from Node ID 0x44:
+14:31:24.949 ->         hopCount:   2
+14:31:24.949 ->         nextHop:    0x11
+14:31:24.949 ->         maxLinkRssi:  -108
+14:31:24.949 ->         Attempted Payload Transmissions:                   34
+14:31:24.949 ->         Total Payloads Received from this Node:            9
+14:31:24.949 -> ldm_checkFrameHeader: something happened...
+14:31:24.949 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:24.949 -> ldm_checkFrameHeader: something happened...
+14:31:24.949 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:24.949 -> ldm_checkFrameHeader: something happened...
+14:31:24.949 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:24.949 -> A payload was parsed.
+14:31:24.949 ->     Received payload from Node ID 0x22:
+14:31:24.949 ->         hopCount:   1
+14:31:24.949 ->         nextHop:    0xAA
+14:31:24.949 ->         maxLinkRssi:  -70
+14:31:24.949 ->         Attempted Payload Transmissions:                   18
+14:31:24.949 ->         Total Payloads Received from this Node:            11
+14:31:24.949 -> ldm_checkFrameHeader: something happened...
+14:31:24.949 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:24.949 -> ldm_checkFrameHeader: something happened...
+14:31:34.891 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:54.921 -> ldm_checkFrameHeader: something happened...
+14:31:54.921 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:54.921 -> A payload was parsed.
+14:31:54.921 ->     Received payload from Node ID 0x33:
+14:31:54.921 ->         hopCount:   1
+14:31:54.921 ->         nextHop:    0xAA
+14:31:54.921 ->         maxLinkRssi:  -99
+14:31:54.921 ->         Attempted Payload Transmissions:                   14
+14:31:54.921 ->         Total Payloads Received from this Node:            10
+14:31:54.921 -> ldm_checkFrameHeader: something happened...
+14:31:54.921 -> ldm_checkFrameHeader: valid LDM Header values
+14:31:54.921 -> ldm_checkFrameHeader: something happened...
+14:31:54.921 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:08.472 -> A LDM Frame was processed.
+14:32:08.472 -> ldm_checkFrameHeader: something happened...
+14:32:08.472 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:08.472 -> A payload was parsed.
+14:32:08.472 ->     Received payload from Node ID 0x11:
+14:32:08.472 ->         hopCount:   1
+14:32:08.472 ->         nextHop:    0xAA
+14:32:08.472 ->         maxLinkRssi:  -88
+14:32:08.472 ->         Attempted Payload Transmissions:                   35
+14:32:08.472 ->         Total Payloads Received from this Node:            11
+14:32:30.641 -> ldm_checkFrameHeader: something happened...
+14:32:30.641 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:30.641 -> ldm_checkFrameHeader: something happened...
+14:32:30.641 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:30.641 -> ldm_checkFrameHeader: something happened...
+14:32:30.641 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:30.641 -> A payload was parsed.
+14:32:30.641 ->     Received payload from Node ID 0x66:
+14:32:30.641 ->         hopCount:   2
+14:32:30.641 ->         nextHop:    0x22
+14:32:30.641 ->         maxLinkRssi:  -109
+14:32:30.641 ->         Attempted Payload Transmissions:                   19
+14:32:30.641 ->         Total Payloads Received from this Node:            8
+14:32:30.641 -> ldm_checkFrameHeader: something happened...
+14:32:30.641 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:30.641 -> ldm_checkFrameHeader: something happened...
+14:32:30.641 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:30.641 -> ldm_checkFrameHeader: something happened...
+14:32:30.641 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:50.185 -> ldm_checkFrameHeader: something happened...
+14:32:50.185 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:50.185 -> ldm_checkFrameHeader: something happened...
+14:32:50.185 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:50.185 -> A payload was parsed.
+14:32:50.185 ->     Received payload from Node ID 0x77:
+14:32:50.185 ->         hopCount:   2
+14:32:50.185 ->         nextHop:    0x11
+14:32:50.185 ->         maxLinkRssi:  -71
+14:32:50.185 ->         Attempted Payload Transmissions:                   36
+14:32:50.185 ->         Total Payloads Received from this Node:            8
+14:32:50.185 -> ldm_checkFrameHeader: something happened...
+14:32:50.185 -> ldm_checkFrameHeader: valid LDM Header values
+14:32:50.185 -> ldm_checkFrameHeader: something happened...
+14:32:50.185 -> ldm_checkFrameHeader: valid LDM Header values
+14:33:10.216 -> A LDM Frame was processed.
+14:33:15.190 -> ldm_checkFrameHeader: something happened...
+14:33:15.190 -> ldm_checkFrameHeader: valid LDM Header values
+14:33:15.190 -> A payload was parsed.
+14:33:15.190 ->     Received payload from Node ID 0x44:
+14:33:15.190 ->         hopCount:   2
+14:33:15.190 ->         nextHop:    0x11
+14:33:15.190 ->         maxLinkRssi:  -108
+14:33:15.190 ->         Attempted Payload Transmissions:                   37
+14:33:15.190 ->         Total Payloads Received from this Node:            10
+14:33:15.190 -> ldm_checkFrameHeader: something happened...
+14:33:15.190 -> ldm_checkFrameHeader: valid LDM Header values
+14:33:35.221 -> ldm_checkFrameHeader: something happened...
+14:33:35.221 -> ldm_checkFrameHeader: valid LDM Header values
+14:33:35.221 -> ldm_checkFrameHeader: something happened...
+14:33:35.221 -> ldm_checkFrameHeader: valid LDM Header values
+14:33:35.221 -> A payload was parsed.
+14:33:35.221 ->     Received payload from Node ID 0x22:
+14:33:35.221 ->         hopCount:   1
+14:33:35.221 ->         nextHop:    0xAA
+14:33:35.221 ->         maxLinkRssi:  -70
+14:33:35.221 ->         Attempted Payload Transmissions:                   20
+14:33:35.221 ->         Total Payloads Received from this Node:            12
+14:33:35.221 -> ldm_checkFrameHeader: something happened...
+14:33:35.221 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:13.967 -> A LDM Frame was processed.
+14:34:13.967 -> ldm_checkFrameHeader: something happened...
+14:34:13.967 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:13.967 -> A payload was parsed.
+14:34:13.967 ->     Received payload from Node ID 0x11:
+14:34:13.967 ->         hopCount:   1
+14:34:13.967 ->         nextHop:    0xAA
+14:34:13.967 ->         maxLinkRssi:  -88
+14:34:13.967 ->         Attempted Payload Transmissions:                   38
+14:34:13.967 ->         Total Payloads Received from this Node:            12
+14:34:33.997 -> ldm_checkFrameHeader: something happened...
+14:34:33.997 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:33.997 -> ldm_checkFrameHeader: something happened...
+14:34:33.997 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:33.997 -> ldm_checkFrameHeader: something happened...
+14:34:33.997 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:33.997 -> ldm_checkFrameHeader: something happened...
+14:34:33.997 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:33.997 -> A payload was parsed.
+14:34:33.997 ->     Received payload from Node ID 0x66:
+14:34:33.997 ->         hopCount:   2
+14:34:33.997 ->         nextHop:    0x77
+14:34:33.997 ->         maxLinkRssi:  -11
+14:34:33.997 ->         Attempted Payload Transmissions:                   39
+14:34:33.997 ->         Total Payloads Received from this Node:            9
+14:34:33.997 -> ldm_checkFrameHeader: something happened...
+14:34:33.997 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:33.997 -> ldm_checkFrameHeader: something happened...
+14:34:33.997 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:33.997 -> ldm_checkFrameHeader: something happened...
+14:34:33.997 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:33.997 -> ldm_checkFrameHeader: something happened...
+14:34:33.997 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:33.997 -> ldm_checkFrameHeader: something happened...
+14:34:54.031 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:54.031 -> ldm_checkFrameHeader: something happened...
+14:34:54.031 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:54.031 -> A payload was parsed.
+14:34:54.031 ->     Received payload from Node ID 0x77:
+14:34:54.031 ->         hopCount:   2
+14:34:54.031 ->         nextHop:    0x11
+14:34:54.031 ->         maxLinkRssi:  -82
+14:34:54.031 ->         Attempted Payload Transmissions:                   40
+14:34:54.031 ->         Total Payloads Received from this Node:            9
+14:34:54.031 -> ldm_checkFrameHeader: something happened...
+14:34:54.031 -> ldm_checkFrameHeader: valid LDM Header values
+14:34:54.031 -> ldm_checkFrameHeader: something happened...
+14:34:54.031 -> ldm_checkFrameHeader: valid LDM Header values
+14:35:14.065 -> A LDM Frame was processed.
+14:35:24.892 -> ldm_checkFrameHeader: something happened...
+14:35:24.892 -> ldm_checkFrameHeader: valid LDM Header values
+14:35:45.553 -> ldm_checkFrameHeader: something happened...
+14:35:45.553 -> ldm_checkFrameHeader: valid LDM Header values
+14:35:58.135 -> A LDM Frame was processed.
+14:36:17.274 -> ldm_checkFrameHeader: something happened...
+14:36:17.274 -> ldm_checkFrameHeader: valid LDM Header values
+14:36:17.307 -> A payload was parsed.
+14:36:17.307 ->     Received payload from Node ID 0x66:
+14:36:17.307 ->         hopCount:   1
+14:36:17.307 ->         nextHop:    0xAA
+14:36:17.307 ->         maxLinkRssi:  -48
+14:36:17.307 ->         Attempted Payload Transmissions:                   14
+14:36:17.307 ->         Total Payloads Received from this Node:            10
+14:36:19.281 -> ldm_checkFrameHeader: something happened...
+14:36:19.281 -> ldm_checkFrameHeader: valid LDM Header values
+14:36:19.315 -> A payload was parsed.
+14:36:19.315 ->     Received payload from Node ID 0x66:
+14:36:19.315 ->         hopCount:   1
+14:36:19.315 ->         nextHop:    0xAA
+14:36:19.315 ->         maxLinkRssi:  -48
+14:36:19.315 ->         Attempted Payload Transmissions:                   15
+14:36:19.315 ->         Total Payloads Received from this Node:            11
+14:36:23.378 -> ldm_checkFrameHeader: something happened...
+14:36:23.378 -> ldm_checkFrameHeader: valid LDM Header values
+14:36:33.341 -> ldm_checkFrameHeader: something happened...
+14:36:33.341 -> ldm_checkFrameHeader: valid LDM Header values
+14:36:33.341 -> A payload was parsed.
+14:36:33.341 ->     Received payload from Node ID 0x77:
+14:36:33.341 ->         hopCount:   1
+14:36:33.341 ->         nextHop:    0xAA
+14:36:33.341 ->         maxLinkRssi:  -43
+14:36:33.341 ->         Attempted Payload Transmissions:                   17
+14:36:33.341 ->         Total Payloads Received from this Node:            10
+14:36:45.410 -> ldm_checkFrameHeader: something happened...
+14:36:45.410 -> ldm_checkFrameHeader: valid LDM Header values
+14:36:58.139 -> A LDM Frame was processed.
+14:37:23.377 -> ldm_checkFrameHeader: something happened...
+14:37:23.377 -> ldm_checkFrameHeader: valid LDM Header values
+14:37:45.378 -> ldm_checkFrameHeader: something happened...
+14:37:45.378 -> ldm_checkFrameHeader: valid LDM Header values
+14:37:58.104 -> A LDM Frame was processed.
+14:38:33.310 -> ldm_checkFrameHeader: something happened...
+14:38:33.310 -> ldm_checkFrameHeader: valid LDM Header values
+14:38:33.348 -> A payload was parsed.
+14:38:33.348 ->     Received payload from Node ID 0x77:
+14:38:33.348 ->         hopCount:   1
+14:38:33.348 ->         nextHop:    0xAA
+14:38:33.348 ->         maxLinkRssi:  -19
+14:38:33.348 ->         Attempted Payload Transmissions:                   18
+14:38:33.348 ->         Total Payloads Received from this Node:            11
+14:38:45.368 -> ldm_checkFrameHeader: something happened...
+14:38:45.368 -> ldm_checkFrameHeader: valid LDM Header values
+14:38:58.127 -> A LDM Frame was processed.
+14:39:45.405 -> ldm_checkFrameHeader: something happened...
+14:39:45.405 -> ldm_checkFrameHeader: valid LDM Header values
+14:39:58.099 -> A LDM Frame was processed.
+14:40:33.335 -> ldm_checkFrameHeader: something happened...
+14:40:33.335 -> ldm_checkFrameHeader: valid LDM Header values
+14:40:33.335 -> A payload was parsed.
+14:40:33.335 ->     Received payload from Node ID 0x77:
+14:40:33.335 ->         hopCount:   1
+14:40:33.335 ->         nextHop:    0xAA
+14:40:33.335 ->         maxLinkRssi:  -19
+14:40:33.335 ->         Attempted Payload Transmissions:                   19
+14:40:33.335 ->         Total Payloads Received from this Node:            12
+14:40:45.402 -> ldm_checkFrameHeader: something happened...
+14:40:45.402 -> ldm_checkFrameHeader: valid LDM Header values
+14:40:58.122 -> A LDM Frame was processed.
+14:41:45.389 -> ldm_checkFrameHeader: something happened...
+14:41:45.389 -> ldm_checkFrameHeader: valid LDM Header values
+14:41:58.122 -> A LDM Frame was processed.
+14:42:58.100 -> A LDM Frame was processed.
+14:43:58.130 -> A LDM Frame was processed.
+14:44:58.109 -> A LDM Frame was processed.
+14:45:58.118 -> A LDM Frame was processed.
+14:46:58.099 -> A LDM Frame was processed.
+14:47:58.117 -> A LDM Frame was processed.
+14:48:58.101 -> A LDM Frame was processed.
+14:49:58.128 -> A LDM Frame was processed.
+14:50:58.095 -> A LDM Frame was processed.
+14:51:59.055 -> A LDM Frame was processed.
+14:52:58.094 -> A LDM Frame was processed.
+14:53:58.126 -> A LDM Frame was processed.
+14:54:59.736 -> A LDM Frame was processed.
+14:55:58.111 -> A LDM Frame was processed.
+14:56:58.717 -> A LDM Frame was processed.
+14:57:58.090 -> A LDM Frame was processed.
+14:58:58.098 -> A LDM Frame was processed.
+14:59:58.108 -> A LDM Frame was processed.
+15:00:58.113 -> A LDM Frame was processed.
+15:01:58.097 -> A LDM Frame was processed.
