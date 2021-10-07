@@ -436,6 +436,10 @@ void ldm_printRoutingTable(){
   }
 }
 
+
+// Based on:
+// https://forum.arduino.cc/t/runevery-the-next-blink-without-delay/122405
+// https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaSenderNonBlockingCallback/LoRaSenderNonBlockingCallback.ino
 boolean runEvery(unsigned long interval){
   static unsigned long previousMillis = 0;
   unsigned long currentMillis = millis();
