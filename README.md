@@ -2,44 +2,16 @@
 
 |Folder                                                       |Description                                                                 |
 |-------------------------------------------------------------|----------------------------------------------------------------------------|
-|[01_examples_to_test_hardware](/01_examples_to_test_hardware)|Example sketches to test the functionality of the T-Beams. Sources included.|
-|[02_random_data_to_db](/02_random_data_to_db)                |Sending formatted random GPS payloads from a LoRa Node (LN) to a Gateway (GW) which is connected to a Socket Server and a Database.|
-|[03_testing_protocol_functions](/03_testing_protocol_functions)|Testing functions used in the LoRaDiMe Protocol		   |
-
-## Table of Contents
-
-- [Intro](#intro)
-- [Use Cases](#use-cases)
+|[01_Example-Projects](/01_Example-Projects)|Example sketches/projects to test the functionality of the T-Beams. Sources included.|
+|[02_LDM-Function-Tests](/02_LDM-Function-Tests)                |LDM Function tests to check for a correct implementation of the LoRaDiMe protocol|
+|[03_LDM-Field-Tests](/03_LDM-Field-Tests)|Sketches for every field test conducted with LoRaDiMe during the thesis.|
 
 
-## Intro
+## Description
 
-This repository contains all of the sketches and files that I used and tested while trying to come up with a *Mesh Routing Algorithm* using the LoRa PHY Protocol. 
+This repository features a complete collection of code examples/sketches/projects used in my thesis "Implementing a Mesh Routing Algorithm for the LoRa Protocol on the ESP32". The project resulted in the development of LoRaDiMe, short for Long Range Directed Mesh, which is a protocol enabling multiple devices to periodically send payloads to a predefined destination over multiple hops. LoRaDiMe therefore creates an ad hoc mesh network, which allows mobile and battery powered devices to dynamically self-configure. More information can be found in my thesis, which will be available soon. In the mean time, the code for LoRaDiMe is available here: 
+https://github.com/carlobiermann/LoRaDiMe
 
-The goal of this project is to implement an *[RPL](https://tools.ietf.org/html/rfc6550)*-like routing algorithm, with the use of **8 LilyGO TTGO T-Beams v0.7**. 
 
-One of the T-Beams is a **Gateway Node (GN)** and is connected to the remaining seven T-Beams via LoRa and a **Socket Server (SS)** via WiFi.
 
-The Socket Server will then forward the **payloads**  of each of the seven T-Beams, or **LoRa Nodes (LN)**, to a database via a POST request to an Express Server. The Express Server then handles inserting the JSON data (*the LN payloads*) via a query into a PostgreSQL database.
 
-**The payload contains the following information about each LN:**
-
-- nodeID
-- number of (LoRa) hops
-- latitude (GPS data) 
-- longitude (GPS data) 
-- date and time 
-
-## Use Cases
-
-A system like this can be used to **track** certain **assets** like containers, hardware equipment and cars. It can easily be extended to share sensor data about an asset like monitoring its temperature or detecting tampering.
-
-#### What about Star Topology?
-
-Of course, asset tracking solutions already make use of LoRa and LoRaWAN using a star topology architecture with LoRaWAN gateways and mobile end devices.
-
-This project is going to be a research into *how far* a network can be *extended* spacially, when its nodes have the ability to **relay/route** messages to a gateway. This also implies, that the particular node is **out of reach** of a gateway and therefore relies on other network participants within its reach to forward messages.
-
-Other mesh routing projects using LoRa like **[Meshtastic](https://github.com/meshtastic/Meshtastic-device)** and **[Disaster.Radio](https://github.com/sudomesh/disaster-radio)** suggest that the performance of this kind of network is limited to a small number of devices. 
-
-However, increasing the reach of a T-Beam by routing its LoRa packets with two or three hops could already cover an area of multiple square kilometers. This could mean having an **emergency routing mechanism** in case of nodes not being within reach of a gateway and **fewer expenses for gateways**.
